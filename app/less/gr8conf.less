@@ -1,0 +1,87 @@
+.venue-map {
+  height: 300px;
+  padding: 0;
+
+  .map {
+    &.embed-container {
+      position: relative;
+      #map-notice {
+        position:absolute;
+        width: 100%;
+        text-align: center;
+        bottom:20px;
+        background-color: rgba(0,0,0,.50);
+        color: #ccc;
+        padding: 8px;
+      }
+      .map-overlay{
+        height:100%;
+        width:100%;
+        position:absolute;
+        z-index:9999;
+        background-color:rgba(0,0,0,0.1);
+      }
+    }
+
+  }
+}
+
+.hero-static {
+  &.event-us {
+    background-image: url('../images/us/event.jpg');
+  }
+}
+
+.two-columns {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+
+@media @mobile-port {
+  .two-columns {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  }
+
+}
+
+.technology-background(@image) {
+  &.technology-@{image} {
+    /*background-image: url('../images/technologies/@{image}.png');*/
+  }
+}
+
+
+.technologies {
+  margin-top: 20px;
+  ul[rn-carousel] {
+    width: 150px;
+    height: 180px;
+    margin: 0 auto;
+    li {
+      .technology-image {
+        width: 150px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-position: 12px 12px;
+        .technology-background(groovy);
+        .technology-background(grails);
+        .technology-background(gradle);
+        .technology-background(griffon);
+        .technology-background(boot);
+        .technology-background(gpars);
+        .technology-background(angularjs);
+        .technology-background(spock);
+        .technology-background(html5);
+      }
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+
