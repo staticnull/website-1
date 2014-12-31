@@ -379,6 +379,13 @@ module.exports = function (grunt) {
             }
           }, config)
         }
+      },
+      zip: {
+        'using-cwd': {
+          cwd: 'dist/',
+          src: ['dist/**/*'],
+          dest: 'artifacts/gr8app-' + grunt.template.today('yyyy-MM-dd-hh-mm-ss')  + '.zip'
+        }
       }
     }
   );
@@ -428,7 +435,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'zip'
   ]);
 
   grunt.registerTask('default', [
