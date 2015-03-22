@@ -1,8 +1,8 @@
-angular.module('gr8conf2015').controller('AgendaCtrl', ['$scope', '$cookieStore', 'storage','FEATURES', function ($scope, $cookieStore, storage, FEATURES) {
+angular.module('gr8conf2015').controller('AgendaCtrl', ['$scope', '$cookieStore', 'storage', function ($scope, $cookieStore, storage) {
 
 
         $scope.$on('loaded', function (event, args) {
-            if (FEATURES.agenda && args[0] === "agenda") {
+            if (args[0] === "agenda") {
                 $scope.agenda = args[1]
             }
         });

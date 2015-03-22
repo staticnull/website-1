@@ -18,6 +18,9 @@
 
     "jquery": ">= 2.1.0",
     "bootstrap": "~3.3.1",
+    "lodash": "2.4.1",
+    "moment": "2.5.1",
+    "oauth-js": "0.1.7",
     "jquery-easing": "*",
     "jquery-placeholder": "~2.0.8",
     "spriteOnHover": "https://github.com/sbglasius/spriteOnHover.git",

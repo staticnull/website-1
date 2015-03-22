@@ -1,16 +1,65 @@
-<h3>July, 30th</h3>
-<div class="row row-header">
-  <div class="col-md-2">Time </div>
-  <div class="col-md-2">Schultzw Auditorium </div>
-  <div class="col-md-2">Schultze 127 </div>
-  <div class="col-md-2">Law 235 </div>
-  <div class="col-md-2">Law 238</div>
-</div>
+<!--<h3>July, 30th</h3>-->
+<!--<div class="row row-header">-->
+  <!--<div class="col-md-2">Time </div>-->
+  <!--<div class="col-md-2">Schultzw Auditorium </div>-->
+  <!--<div class="col-md-2">Schultze 127 </div>-->
+  <!--<div class="col-md-2">Law 235 </div>-->
+  <!--<div class="col-md-2">Law 238</div>-->
+<!--</div>-->
 
-<div class="row">
-  <div class="col-md-2">8:00 am </div>
-  <div class="col-md-10">Breakfast (Coffee &amp; Pastries) </div>
-</div>
+<!--<div class="row">-->
+  <!--<div class="col-md-2">8:00 am </div>-->
+  <!--<div class="col-md-10">Breakfast (Coffee &amp; Pastries) </div>-->
+<!--</div>-->
 
-<div class="row row-even">
-</div>
+<!--<div class="row row-even">-->
+<!--</div>-->
+
+<section id="agenda" class="pageheader-default text-center dark" ng-controller="AgendaCtrl">
+    <h1>Agenda</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="btn-group" style="width: 100%">
+                    <button type="button" style="width: {{dayTabWidth}}%" ng-repeat="day in agenda" class="btn btn-primary" ng-model="currentDay" ng-click="changeDay(day.day)" btn-radio="day.day">
+                        {{dayTitle(day.day)}}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="agenda col-xs-12 col-md-12 pad-top-10">
+                <div class="agenda-times col-xs-2 col-md-1">
+                    <div class="agenda-time"></div>
+                    <div ng-repeat="hour in agendaHours">
+                        {{hour}}:00
+                    </div>
+                    <break-icon ng-repeat="agendaItem in breaks.slots" item="agendaItem" start-hour="agendaHours[0]" color="track.color"></break-icon>
+                </div>
+                <div class="col-xs-10 col-md-11">
+                    <div class="agenda-outer" style="height: {{agendaHeight}}px">
+                        <div class="agenda-inner">
+                            <agenda-track ng-repeat="track in agendaColumns">
+                                <div class="agenda-title">
+                                    {{track.name}}
+                                </div>
+                                <div class="agenda-room">
+                                    {{track.room}}
+                                </div>
+                                <agenda-item ng-repeat="agendaItem in track.slots" item="agendaItem" start-hour="agendaHours[0]" color="track.color"></agenda-item>
+                            </agenda-track>
+                            <div ng-repeat="track in allColumns" style="position:relative;height:100%;">
+                                <agenda-item ng-repeat="agendaItem in track.slots" item="agendaItem" start-hour="agendaHours[0]" color="track.color" room="track.room"></agenda-item>
+                            </div>
+                            <div style="position: relative; height: 100%">
+                                <break-item ng-repeat="agendaItem in breaks.slots" item="agendaItem" start-hour="agendaHours[0]" color="track.color"></break-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
