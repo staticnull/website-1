@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="gr8conf2015">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title ng-bind="conferenceName"></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -26,7 +26,7 @@
 <!--[if lt IE 9>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<body ng-app="gr8conf2015" class="animated fadeIn"><!--Add "parallax" class if you have elements on the page with parallax backgrounds. "fadeIn" class makes content fades in on loading-->
+<body class="animated fadeIn"><!--Add "parallax" class if you have elements on the page with parallax backgrounds. "fadeIn" class makes content fades in on loading-->
 <!--Body-->
 <div id="top"></div>
 <!--Off-Canvas-->
@@ -47,7 +47,7 @@
 
       <!--Fullscreen Hero-->
       <!--Adding class "fullscreen" makes hero height equals window height-->
-      <section class="hero-static fullscreen no-space-bottom {{eventImageCss}}" parallax-background parallax-ratio="-0.4">
+      <section id="hero" class="hero-static fullscreen no-space-bottom {{eventImageCss}}" parallax-background parallax-ratio="-0.4">
 
         <!--Event Info Block-->
         <div class="overlay-block">
@@ -71,14 +71,24 @@
                     </div>
                   </div>
                 </div>
+
+				        <!--TODO: EU
+                <div class="col-md-3" ng-controller="RegistrationCtrl">
+                  <a ng-href="{{registrationUrl}}" target="_blank" class="btn  btn-lg btn-primary btn-register">
+                    <span class="text"><i class="fa fa-ticket"></i> Register here</span>
+                  </a>
+                </div>
+				        -->
+
                 <div class="col-md-3">
                   <form method="post" name="event-registration" class="light-version">
-                        <h5>Registration opens soon</h5>
-                        <button class="btn btn-outlined btn-lg btn-default" disabled="disabled" type="submit">
-                          <span class="text">Register here</span>
-                        </button>
+                    <h5>Registration opens soon</h5>
+                    <button class="btn btn-outlined btn-lg btn-default" disabled="disabled" type="submit">
+                      <span class="text">Register here</span>
+                    </button>
                   </form>
                 </div>
+
               </div>
             </div>
           </div>
@@ -90,7 +100,7 @@
       <!--Header-->
       <!--Scroller header is for one page layouts where navigation links are anchors to the relevant section of the page.
       Please note in a "boxed" mode header doesn't stick to the top.-->
-      <header class="header scroller">
+      <header id="header" class="header scroller">
         <div class="inner">
           <div class="container group">
 
@@ -129,6 +139,7 @@
       <!--Header Close-->
 
       <!--Page Content-->
+	    <!--TODO: Eparallax diff?-->
       <div id="page" class="page" parallax-background parallax-ratio="0.1">
         <div ng-view=""></div>
       </div>
@@ -235,13 +246,11 @@
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <script src="bower_components/angular-parallax/scripts/angular-parallax.js"></script>
 <script src="bower_components/revolunet-angular-carousel/dist/angular-carousel.js"></script>
 <script src="bower_components/ngSmoothScroll/angular-smooth-scroll.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/lodash/dist/lodash.compat.js"></script>
-<script src="bower_components/moment/moment.js"></script>
-<script src="bower_components/oauth-js/oauth.min.js"></script>
 <script src="bower_components/jquery-easing/jquery.easing.js"></script>
 <script src="bower_components/jquery-easing/jquery.easing.min.js"></script>
 <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
@@ -271,6 +280,10 @@
 <script src="bower_components/isotope/js/layout-modes/fit-rows.js"></script>
 <script src="bower_components/isotope/js/layout-modes/masonry.js"></script>
 <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/auto-active/autoActive.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/angular-moment/angular-moment.js"></script>
 <!-- endbower -->
 <script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
 <!-- endbuild -->
@@ -278,16 +291,35 @@
 <script src="scripts/config.js"></script>
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
-<script src="scripts/services/menuservice.js"></script>
-<script src="scripts/services/backend.js"></script>
-<script src="scripts/services/storage.js"></script>
 <script src="scripts/controllers/menu.js"></script>
 <script src="scripts/controllers/front.js"></script>
 <script src="scripts/controllers/venue.js"></script>
 <script src="scripts/controllers/cfp.js"></script>
-<script src="scripts/controllers/agenda.js"></script>
+<script src="scripts/controllers/featuredSpeakers.js"></script>
+<script src="scripts/controllers/speakers.js"></script>
+<script src="scripts/controllers/speaker.js"></script>
+<script src="scripts/controllers/talks.js"></script>
+<script src="scripts/controllers/talk.js"></script>
 <script src="scripts/controllers/about.js"></script>
-<script src="scripts/directives/mapclick.js"></script>
+<script src="scripts/controllers/registration.js"></script>
+<script src="scripts/controllers/sponsor.js"></script>
+<script src="scripts/controllers/sponsors.js"></script>
+<script src="scripts/controllers/agenda.js"></script>
+<script src="scripts/controllers/cfp.js"></script>
+
+<script src="scripts/directives/agenda-directives.js"></script>
+<script src="scripts/directives/speaker-directive.js"></script>
+<script src="scripts/directives/talk-directive.js"></script>
+<script src="scripts/directives/mapclick-directive.js"></script>
+
+<script src="scripts/services/backend.js"></script>
+<script src="scripts/services/blogservice.js"></script>
+<script src="scripts/services/dataservice.js"></script>
+<script src="scripts/services/menuservice.js"></script>
+<script src="scripts/services/modalservice.js"></script>
+<script src="scripts/services/storage.js"></script>
+<script src="scripts/services/user.js"></script>
+
 <!-- endbuild -->
 <!-- build:js({.tmp,app}) scripts/kedavra_dist.js -->
 <script src="scripts/misc/kedavra.js"></script>

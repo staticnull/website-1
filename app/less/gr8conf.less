@@ -1,3 +1,5 @@
+@import "variables";
+
 .venue-map {
   height: 300px;
   padding: 0;
@@ -6,20 +8,20 @@
     &.embed-container {
       position: relative;
       #map-notice {
-        position:absolute;
+        position: absolute;
         width: 100%;
         text-align: center;
-        bottom:20px;
-        background-color: rgba(0,0,0,.50);
+        bottom: 20px;
+        background-color: rgba(0, 0, 0, .50);
         color: #ccc;
         padding: 8px;
       }
-      .map-overlay{
-        height:100%;
-        width:100%;
-        position:absolute;
-        z-index:9999;
-        background-color:rgba(0,0,0,0.1);
+      .map-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.1);
       }
     }
 
@@ -30,6 +32,9 @@
   &.event-us {
     background-image: url('../images/us/event.jpg');
   }
+}
+.btn-register {
+  border: white 1px solid;
 }
 
 .two-columns {
@@ -49,10 +54,9 @@
 
 .technology-background(@image) {
   &.technology-@{image} {
-    /*background-image: url('../images/technologies/@{image}.png');*/
+    background-image: url('../images/technologies/@{image}.png');
   }
 }
-
 
 .technologies {
   margin-top: 20px;
@@ -75,12 +79,324 @@
         .technology-background(angularjs);
         .technology-background(spock);
         .technology-background(html5);
+        .technology-background(geb);
       }
       width: 100%;
       height: 100%;
       font-size: 20px;
       color: white;
     }
+  }
+}
+
+.speakers-carousel {
+  margin-top: 20px;
+  ul[rn-carousel] {
+    width: 400px;
+    height: 220px;
+    margin: 0 auto;
+    li {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      color: white;
+      .speaker {
+        .speaker-detail {
+          .speaker-img {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .speaker-bio {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.speaker {
+  a {
+    text-decoration: none;
+  }
+
+  img.speakerImg {
+    width: 100px;
+    margin-right: 10px;
+  }
+  .speaker-detail {
+    a {
+      color: @text-color;
+    }
+  }
+
+  div.speaker-detail {
+    cursor: pointer;
+    min-height: 100px;
+  }
+  div.social-icons {
+  }
+  margin-bottom: 10px;
+}
+
+.talk {
+  a {
+    text-decoration: none;
+    color: @text-color;
+  }
+  .detailed {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding-left: 15px;
+        .speaker-img {
+          width: 50px;
+          display: inline;
+          margin-right: 5px;
+        }
+
+      }
+    }
+
+  }
+
+  .label {
+    margin-left: 3px;
+    display: inline-block;
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.agenda {
+  .agenda-title {
+    font-size: 20px;
+    font-weight: bold;
+    max-height: 60px;
+  }
+  .agenda-room {
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 6px;
+  }
+  .agenda-times {
+    position: relative;
+    float: left;
+    height: 100%;
+    div {
+      height: 60px;
+    }
+  }
+  .agenda-track {
+    position: relative;
+    float: left;
+    height: 100%;
+  }
+  //    background-color: #FFFFFF;
+  text-align: center;
+  line-height: 14px;
+  .agendaItem {
+    .agendaTimeStart {
+      position: absolute;
+      top: 3px;
+      left: 2px;
+      font-size: x-small;
+    }
+    .agendaTimeEnd {
+      position: absolute;
+      bottom: 3px;
+      left: 2px;
+      font-size: x-small;
+
+    }
+    .agendaFavorite {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .agendaItemInner {
+      margin-left: 35px;
+      margin-right: 16px;
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+      .agendaTalk {
+        font-weight: bold;
+        font-size: 110%;
+      }
+      .agendaSpeaker {
+        color: #444;
+        white-space: nowrap;
+      }
+    }
+    border-radius: 2px;
+    overflow-y: hidden;
+    max-height: 60px;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    border: 1px solid black;
+    padding: 3px;
+    &.small-row {
+      padding: 0;
+      .agendaTimeStart {
+        top: 0;
+      }
+      .agendaTimeEnd {
+        display: none;
+      }
+      .agendaFavorite {
+        top: -2px;
+      }
+    }
+  }
+  .breakItem {
+    border-radius: 2px;
+    max-height: 60px;
+    color: #808080;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 3px;
+    font-size: small;
+    &.small {
+      font-size: 8px;
+      padding-top: 1px;
+      line-height: 7px;
+    }
+  }
+  .breakIcon {
+    border: none;
+    max-height: 60px;
+    color: darkgrey;
+    position: absolute;
+    width: 100%;
+    .fa {
+      font-size: 1.5em;
+    }
+    padding: 3px;
+    &.small {
+      .fa {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+}
+
+.agenda-days {
+  width: 100%;
+  .btn {
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+.agenda-outer {
+  font-size: 12px;
+  .swipe {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .pageheader-default h1 {
+    font-size: 15px;
+  }
+
+  .pageheader-default h1.large {
+    font-size: 20px;
+  }
+
+  .page-description {
+    font-size: 15px;
+  }
+
+  iframe.youtube {
+    height: 180px;
+    width: 300px;
+  }
+
+  .agenda-outer {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    .swipe {
+      display: block;
+      padding-bottom: 5px;
+      color: #999;
+    }
+    .agenda-inner {
+      width: 200%;
+      position: absolute;
+    }
+  }
+}
+
+@media print {
+  .agenda-outer {
+    width: auto;
+    .agenda-inner {
+      width: auto;
+      position: relative;
+    }
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  a[href]:after {
+    content: '';
+  }
+
+  .header.scroller {
+    .inner {
+      height: 80px;
+    }
+  }
+
+  #hero, #menu, .footer, .copyright, .sticky-btns, .navigation, .holder, .agenda-days, .tools {
+    display: none;
+  }
+}
+
+.sponsors {
+  h4 {
+    text-align: center;
+  }
+  &.well {
+    background-color: fade(@brand-primary, 80%);
+  }
+  .sponsor {
+    text-align: center;
+    background-color: white;
+    img {
+      margin: auto;
+      padding: 5px;
+      &.platinum {
+        width: 100%;
+      }
+      &.gold {
+        width: 75%;
+      }
+      &.silver {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  h4 {
+    font-size: 100%
   }
 }
 
