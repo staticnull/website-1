@@ -77,6 +77,7 @@ module.exports = function (grunt) {
           },
           files: [
             '<%= yeoman.app %>/**/{,*/}*.html',
+            '<%= yeoman.app %>/less/{,*/}*.less',
             '.tmp/styles/{,*/}*.css',
             '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
           ]
@@ -236,7 +237,7 @@ module.exports = function (grunt) {
           files: [{
             expand: true,
             cwd: '<%= yeoman.app %>/images',
-            src: '{,*/}*.{png,jpg,jpeg,gif}',
+            src: ['{,*/}*.{png,jpg,jpeg,gif}', '!images/eu/sponsors/**'],
             dest: '<%= yeoman.dist %>/images'
           }]
         }
@@ -305,6 +306,7 @@ module.exports = function (grunt) {
               '*.html',
               'views/**/{,*/}*.html',
               'images/{,*/}*.{webp}',
+              'images/us/sponsors/**',
               'fonts/{,*/}*.*'
             ]
           }, {
@@ -379,13 +381,6 @@ module.exports = function (grunt) {
             }
           }, config)
         }
-      },
-      zip: {
-        'using-cwd': {
-          cwd: 'dist/',
-          src: ['dist/**/*'],
-          dest: 'artifacts/gr8app-' + grunt.template.today('yyyy-MM-dd-hh-mm-ss')  + '.zip'
-        }
       }
     }
   );
@@ -435,8 +430,7 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin',
-    'zip'
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
