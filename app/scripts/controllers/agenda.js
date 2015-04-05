@@ -13,7 +13,9 @@ angular.module('gr8conf2015')
       $scope.dayTabWidth = 100 / agenda.length;
     });
 
-    $scope.agenda = storage.get('agenda');
+    $scope.agenda = _.sortBy(storage.get('agenda'), function(item) {
+      return item.day;
+    });
     $scope.currentDay = $routeParams.currentDay || storage.get('currentDay') || $scope.agenda[0].day;
 
     $scope.$watch('currentDay', function () {
