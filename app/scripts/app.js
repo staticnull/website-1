@@ -37,6 +37,11 @@ angular
         controller: 'FrontCtrl',
         scroll: 'page'
       })
+      .when('/codeofconduct', {
+        templateUrl: base + '/codeOfConduct.html',
+        controller: 'CodeOfConductCtrl',
+        scroll: 'page'
+      })
       .when('/venue', {
         templateUrl: base + '/venue.html',
         controller: 'VenueCtrl',
