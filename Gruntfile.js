@@ -8,7 +8,6 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -24,18 +23,16 @@ module.exports = function (grunt) {
 
   var config = require('./app/config/' + env + '.json');
 
-
   // Define the configuration for all the tasks
   grunt.initConfig({
       //uglify: {
           //options: {
             //mangle: false,
             //compress: false,
-            ////wrap: true,
-              //maxLineLen: 120,
-              //screwIE8: true,
-                  //preserveComments: true
-
+            //wrap: true,
+            //maxLineLen: 120,
+            //screwIE8: true,
+            //preserveComments: true
           //}
       //},
       // Project settings
@@ -49,8 +46,7 @@ module.exports = function (grunt) {
           },
           files: {
             // target.css file: source.less file
-            ".tmp/styles/main.css": "<%= yeoman.app %>/less/styles.less",
-            //".tmp/styles/main.css": "<%= yeoman.app %>/less/styles.less"
+            ".tmp/styles/main.css": "<%= yeoman.app %>/less/styles.less"
           }
         }
       },
@@ -391,10 +387,16 @@ module.exports = function (grunt) {
             }
           }, config)
         }
+      },
+      zip: {
+        'using-cwd': {
+          cwd: 'dist/',
+          src: ['dist/**/*'],
+          dest: 'artifacts/gr8app-' + grunt.template.today('yyyy-MM-dd-hh-mm-ss')  + '.zip'
+        }
       }
     }
   );
-
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -440,7 +442,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'zip'
   ]);
 
   grunt.registerTask('default', [
@@ -450,6 +453,4 @@ module.exports = function (grunt) {
   ]);
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-ng-constant');
-
-}
-;
+};
