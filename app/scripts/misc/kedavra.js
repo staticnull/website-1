@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
   var $harmonic = $('.harmonic .item');
   var $tooltip = $('.tooltipped');
   var $percentChart = $('.percent-chart');
-  var $lightGallery = $('.lightGallery');
+  // var $lightGallery = $('.lightGallery'); TODO: Throwing JS errors remove
 
   var $sidebarBtn = $('.sidebar-button');
   var $shareBar = $('.share-modal .bar');
@@ -368,7 +368,7 @@ jQuery(document).ready(function($) {
 
   /*Light Gallery (Lightbox)
    *******************************************/
-  $lightGallery.lightGallery({caption: true});
+  // $lightGallery.lightGallery({caption: true}); TODO: Throwing JS errors remove
 
   ///////////////////////////////////////////////////////////////////////
   /////////////////  Forms Validation and Styling  //////////////////////
