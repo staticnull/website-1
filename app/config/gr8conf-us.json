@@ -22,7 +22,27 @@
     "saveRating": "http://cfp.gr8conf.org/api/ratings/put"
   },
   "SPONSORS": [
-
-
+    {
+      "name": "Platinum sponsor",
+      "class": "platinum",
+      "sponsors": [
+        {
+          "name": "Object Partners",
+          "url": "http://objectpartners.com",
+          "image": "images/us/sponsors/objectpartners.png"
+        }
+      ]
+    },
+    {
+      "name": "Platinum sponsor",
+      "class": "platinum",
+      "sponsors": [
+        {
+          "name": "Target",
+          "url": "http://target.com",
+          "image": "images/us/sponsors/target.jpg"
+        }
+      ]
+    }
   ]
 }

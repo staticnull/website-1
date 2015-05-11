@@ -28,22 +28,20 @@
       "class": "platinum",
       "sponsors": [
         {
-          "name": "Nine",
-          "url": "https://nine.dk/",
-          "image": "images/eu/sponsors/nine.png",
-          "html": "eu/sponsors/_nine.html"
+          "name": "Object Partners",
+          "url": "http://objectpartners.com",
+          "image": "images/us/sponsors/objectpartners.png"
         }
       ]
     },
     {
-      "name": "Gold sponsor",
-      "class": "gold",
+      "name": "Platinum sponsor",
+      "class": "platinum",
       "sponsors": [
         {
-          "name": "IntelliGrape",
-          "url": "https://intelligrape.com/",
-          "image": "images/eu/sponsors/intelligrape.png",
-          "html": "eu/sponsors/_intelligrape.html"
+          "name": "Target",
+          "url": "http://target.com",
+          "image": "images/us/sponsors/target.jpg"
         }
       ]
     }
