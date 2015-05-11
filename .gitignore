@@ -4,6 +4,7 @@ dist
 .sass-cache
 bower_components
 atlassian-ide-plugin.xml
+.idea
 *.ipr
 *.iml
 *.iws
