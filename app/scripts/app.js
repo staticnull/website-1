@@ -42,11 +42,20 @@ angular
         controller: 'CodeOfConductCtrl',
         scroll: 'page'
       })
+      .when('/travel', {
+        templateUrl: base + '/travel.html',
+        controller: 'TravelCtrl',
+        scroll: 'page'
+      })
       .when('/venue', {
         templateUrl: base + '/venue.html',
         controller: 'VenueCtrl',
         scroll: 'page'
-
+      })
+      .when('/sponsors', {
+        templateUrl: base + '/sponsors.html',
+        controller: 'SponsorsCtrl',
+        scroll: 'page'
       })
       .when('/cfp', {
         templateUrl: base + '/cfp.html',
