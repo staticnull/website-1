@@ -392,7 +392,7 @@ module.exports = function (grunt) {
         'using-cwd': {
           cwd: 'dist/',
           src: ['dist/**/*'],
-          dest: 'artifacts/gr8app-' + grunt.template.today('yyyy-MM-dd-hh-mm-ss')  + '.zip'
+          dest: 'artifacts/gr8app-' + grunt.template.today('yyyy-mm-dd-hh-MM-ss')  + '.zip'
         }
       }
     }
