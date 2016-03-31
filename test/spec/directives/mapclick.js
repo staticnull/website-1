@@ -3,7 +3,7 @@
 describe('Directive: mapClick', function () {
 
   // load the directive's module
-  beforeEach(module('gr8app2015App'));
+  beforeEach(module('gr8app2016App'));
 
   var element,
     scope;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .service('dataService', ['$http', 'API', 'CONFERENCE', function ($http, API, CONFERENCE) {
 
     this.getCode = function (callback) {

@@ -1,8 +1,8 @@
 {
   "CONFERENCE": {
-    "id": 4,
+    "id": 7,
     "base": "us",
-    "name": "GR8Conf US-2015",
+    "name": "GR8Conf US-2016",
     "contact": "info@gr8conf.us",
     "blogUrl": "gr8conf.tumblr.com",
     "blogApiKey": "",
@@ -39,9 +39,9 @@
       "class": "platinum",
       "sponsors": [
         {
-          "name": "Target",
-          "url": "http://target.com",
-          "image": "images/us/sponsors/target.jpg"
+          "name": "OCI",
+          "url": "http://ociweb.com",
+          "image": "images/us/sponsors/oci.png"
         }
       ]
     }

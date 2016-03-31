@@ -501,9 +501,9 @@ jQuery(document).ready(function($) {
     if (lastId !== id) {
       lastId = id;
       // Set/remove active class
-      menuItems
-        .parent().removeClass("active")
-        .end().filter("[href=#"+id+"]").parent().addClass("active");
+      //menuItems
+        //.parent().removeClass("active")
+        //.end().filter("[href=#"+id+"]").parent().addClass("active");
     }
   });
   ////////////////////////////////////////////////////////////////////

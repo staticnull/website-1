@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name gr8app2015App.directive:speaker
+ * @name gr8app2016App.directive:speaker
  * @description
  * # speaker
  */
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .directive('speaker', function () {
     return {
       restrict: "E",
@@ -18,7 +18,7 @@ angular.module('gr8conf2015')
       }
     };
   });
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .directive('speakerCarousel', function () {
     return {
       restrict: "E",

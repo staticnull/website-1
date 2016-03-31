@@ -1,4 +1,5 @@
 'use strict';
 
-angular.module('gr8conf2015').controller('SponsorCtrl', ['$scope', '$routeParams', 'SPONSORS', function ($scope,  $routeParams,  SPONSORS) {
+angular.module('gr8conf2016').
+controller('SponsorCtrl', ['$scope', '$routeParams', 'SPONSORS', function ($scope,  $routeParams,  SPONSORS) {
 }]);

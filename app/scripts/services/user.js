@@ -1,4 +1,4 @@
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .service('AuthService',
   ['$rootScope', '$log', 'dataService', 'modalService', 'storage', 'CONFERENCE',
     function ($rootScope, $log, dataService, modalService, storage, CONFERENCE) {

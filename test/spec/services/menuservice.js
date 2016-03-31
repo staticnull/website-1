@@ -3,7 +3,7 @@
 describe('Service: MenuService', function () {
 
   // load the service's module
-  beforeEach(module('gr8app2015App'));
+  beforeEach(module('gr8app2016App'));
 
   // instantiate service
   var MenuService;

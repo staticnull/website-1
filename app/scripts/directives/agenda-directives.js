@@ -1,4 +1,4 @@
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .directive('agendaItem', function () {
     return {
       restrict: "E",

@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name gr8app2015App
+ * @name gr8app2016App
  * @description
- * # gr8app2015App
+ * # gr8app2016App
  *
  * Main module of the application.
  */
 angular
-  .module('gr8conf2015', [
+  .module('gr8conf2016', [
     'ngAnimate',
     'ngCookies',
     'ngMessages',
@@ -108,7 +108,7 @@ angular
       });
   }]);
 angular
-  .module('gr8conf2015').run(['$rootScope', 'smoothScroll', 'backendService', 'CONFERENCE', function ($rootScope, smoothScroll, backendService, CONFERENCE) {
+  .module('gr8conf2016').run(['$rootScope', 'smoothScroll', 'backendService', 'CONFERENCE', function ($rootScope, smoothScroll, backendService, CONFERENCE) {
     $rootScope.scrollToTop = function () {
       var element = document.getElementById('page');
       smoothScroll(element, {offset: 50});

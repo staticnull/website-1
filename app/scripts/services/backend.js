@@ -1,4 +1,4 @@
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .service('backendService', ['$rootScope', '$http', 'storage', 'AuthService', 'API', 'CONFERENCE', 'ENV', function ($rootScope, $http, storage, AuthService, API, CONFERENCE, ENV) {
 
     function loadSpeakers(reload) {

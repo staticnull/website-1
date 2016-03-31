@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name gr8app2015App.controller:VenueCtrl
+ * @name gr8app2016App.controller:VenueCtrl
  * @description
  * # VenueCtrl
- * Controller of the gr8app2015App
+ * Controller of the gr8app2016App
  */
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .controller('RegistrationCtrl', ['$scope','CONFERENCE', function ($scope, CONFERENCE) {
       //$scope.prices = [
       //  {name: 'Regular', university: {dkk: 3275, euro: 435}, conference: {dkk: 4900, euro: 655}},

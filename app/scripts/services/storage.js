@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('gr8conf2015').service('storage', ['$log', '$rootScope', function ($log, $rootScope) {
+angular.module('gr8conf2016')
+.service('storage', ['$log', '$rootScope', function ($log, $rootScope) {
 
   // Public API here
   return {

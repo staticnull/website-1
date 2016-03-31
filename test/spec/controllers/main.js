@@ -3,7 +3,7 @@
 describe('Controller: FrontCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('gr8app2015App'));
+  beforeEach(module('gr8app2016App'));
 
   var MainCtrl,
     scope;

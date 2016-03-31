@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name gr8app2015App.directive:mapClick
+ * @name gr8app2016App.directive:mapClick
  * @description
  * # mapClick
  */
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .directive('mapclick', function () {
     return {
       restrict: 'E',

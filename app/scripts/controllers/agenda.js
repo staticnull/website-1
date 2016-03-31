@@ -1,4 +1,4 @@
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .controller('AgendaCtrl', ['$scope', '$cookieStore', '$routeParams', 'storage', function ($scope, $cookieStore, $routeParams, storage) {
 
 

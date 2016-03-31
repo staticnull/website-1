@@ -1,4 +1,4 @@
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .service('blogService', ['$http', '$log', 'CONFERENCE', function ($http, $log, CONFERENCE) {
     var numberOfPosts = -1;
 

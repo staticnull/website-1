@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name gr8app2015App.controller:CodeOfConductCtrl
+ * @name gr8app2016App.controller:CodeOfConductCtrl
  * @description
  * # CodeOfConductCtrl
- * Controller of the gr8app2015App
+ * Controller of the gr8app2016App
  */
-angular.module('gr8conf2015')
+angular.module('gr8conf2016')
   .controller('CodeOfConductCtrl', ['$scope', function ($scope) {
   }]);
