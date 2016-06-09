@@ -1,4 +1,3 @@
-//= require jquery-2.2.0.min
+//= require jquery-2.2.4
 //= require bootstrap
-//= require_tree .
 //= require_self
