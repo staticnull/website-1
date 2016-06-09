@@ -1,4 +1,4 @@
-package gr8conf
+package us.gr8conf.website
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

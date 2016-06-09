@@ -1,4 +1,4 @@
-package gr8conf
+package us.gr8conf.website
 
 class UrlMappings {
 
@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(controller: "home", action: "index")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
