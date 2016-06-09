@@ -10,6 +10,10 @@ appender('STDOUT', ConsoleAppender) {
 
 root(ERROR, ['STDOUT'])
 
+logger 'grails.app.controllers', INFO, ['STDOUT'], false
+logger 'grails.app.services', INFO, ['STDOUT'], false
+logger 'grails.app.jobs', INFO, ['STDOUT'], false
+
 def targetDir = BuildSettings.TARGET_DIR
 if (Environment.isDevelopmentMode() && targetDir) {
     appender("FULL_STACKTRACE", FileAppender) {
