@@ -2,6 +2,7 @@ package us.gr8conf.website
 
 import grails.config.Config
 import grails.core.GrailsApplication
+import grails.plugin.cache.Cacheable
 import grails.plugins.rest.client.RestBuilder
 
 class ApiService {
@@ -19,14 +20,17 @@ class ApiService {
         config.gr8conf.cfp.confId
     }
 
+    @Cacheable(value = "speakers")
     List getSpeakers() {
         getData('speakers')
     }
 
+    @Cacheable(value = "talks")
     List getTalks() {
         getData('talks')
     }
 
+    @Cacheable(value = "agenda")
     List getAgenda() {
         getData('agenda')
     }
