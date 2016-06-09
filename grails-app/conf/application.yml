@@ -120,3 +120,7 @@ grails:
 endpoints:
     jmx:
         unique-names: true
+gr8conf:
+    cfp:
+        url: http://cfp.gr8conf.org/api2
+        confId: 7
