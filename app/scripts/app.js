@@ -125,14 +125,10 @@ angular
     $rootScope.technologies = [
       {id: 1, img: 'groovy', title: "Groovy", url: "http://groovy-lang.org"},
       {id: 2, img: 'grails', title: "Grails", url: "http://grails.org"},
-      {id: 3, img: 'griffon', title: "Griffon", url: "http://griffon.codehaus.org"},
-      {id: 4, img: 'gradle', title: "Gradle", url: "http://gradle.org"},
-      {id: 5, img: 'boot', title: "Spring Boot", url: "http://projects.spring.io/spring-boot"},
-      {id: 6, img: 'spock', title: "Spock", url: "http://spockframework.org/"},
-      {id: 7, img: 'geb', title: "Geb", url: "http://gebish.org/"},
-      {id: 8, img: 'angularjs', title: "AngularJS", url: "http://angularjs.org"}
+      {id: 3, img: 'ratpack', title: "Ratpack", url: "https://ratpack.io"},
+      {id: 4, img: 'spock', title: "Spock", url: "http://spockframework.org"},
+      {id: 5, img: 'geb', title: "Geb", url: "http://gebish.org"},
+      {id: 6, img: 'angularjs', title: "AngularJS", url: "http://angularjs.org"}
     ];
     backendService.bootstrap();
-
-
   }]);
