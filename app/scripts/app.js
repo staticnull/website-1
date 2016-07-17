@@ -61,7 +61,11 @@ angular
         templateUrl: base + '/cfp.html',
         controller: 'CfpCtrl',
         scroll: 'page'
-
+      })
+      .when('/mobileapps', {
+        templateUrl: base + '/mobile.html',
+        controller: 'CfpCtrl',
+        scroll: 'page'
       })
       .when('/speakers', {
         templateUrl: base + '/speakers.html',
