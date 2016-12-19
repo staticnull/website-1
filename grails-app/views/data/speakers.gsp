@@ -18,8 +18,15 @@
                             <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}">https://twitter.com/${speaker.twitter}</a>
                         </g:if>
                         <g:if test="${numSpeakers == 1}">
-                        <p>${speaker.company}</p>
-                        <p>${raw(speaker.bio)}</p>
+                            <p>${speaker.company}</p>
+                            <p>${raw(speaker.bio)}</p>
+
+                            <h3>Talks</h3>
+                            <ul>
+                            <g:each in="${speaker.talks}" var="talk">
+                                <li><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}">${talk.title}</a></li>
+                            </g:each>
+                            </ul>
                         </g:if>
                     </div>
                 </g:each>
