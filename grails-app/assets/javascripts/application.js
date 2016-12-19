@@ -1,3 +1,3 @@
-//= require jquery-2.2.4
-//= require bootstrap
+//= require jquery/jquery.js
+//= require bootstrap/js/bootstrap.js
 //= require_self

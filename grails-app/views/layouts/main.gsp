@@ -33,6 +33,17 @@
         </div>
     </div>
 
+    <div class="contacts"> <h3>Contact Info</h3> <h5>E-mail:</h5> <p><a href="mailto:contact@gr8conf.us">contact@gr8conf.us</a></p> </div>
+
+    <div class="contacts">
+        <h3>Social</h3>
+        <div class="">
+            <a href="https://twitter.com/gr8confus" class="tooltipped fa fa-twitter" data-placement="top" title="Twitter"></a>
+            <a href="https://facebook.com/GR8ConfUS" class="tooltipped fa fa-facebook" data-placement="top" title="Facebook"></a>
+            <a href="https://plus.google.com/u/2/b/104542830138634018656/104542830138634018656/posts" class="tooltipped fa fa-google-plus" data-placement="top" title="Google+"></a>
+        </div>
+    </div>
+
     <asset:javascript src="application.js"/>
 </body>
 </html>
