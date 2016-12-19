@@ -4,6 +4,7 @@ import grails.config.Config
 import grails.core.GrailsApplication
 import grails.plugin.cache.Cacheable
 import grails.plugins.rest.client.RestBuilder
+import org.hibernate.annotations.Cache
 
 class ApiService {
     GrailsApplication grailsApplication
@@ -41,6 +42,15 @@ class ApiService {
     @Cacheable(value = "agenda")
     List getAgenda() {
         getData('agenda')
+    }
+
+    @Cacheable(value = "tags")
+    List getTags(String tag) {
+        List data = getData('tags')
+        if(tag) {
+            data = [data.find { it.tag == tag } ?: [:]]
+        }
+        data
     }
 
     private List getData(String type) {

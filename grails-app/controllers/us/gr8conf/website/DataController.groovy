@@ -19,4 +19,9 @@ class DataController {
         List agenda = apiService.agenda
         respond agenda, [model: [agenda: agenda]]
     }
+
+    def tags(String tag) {
+        List tags = apiService.getTags(tag)
+        respond tags, [model: [tags: tags]]
+    }
 }
