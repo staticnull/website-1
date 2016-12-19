@@ -4,5 +4,7 @@ class HomeController {
 
     def index() { }
 
-    def coc() {}
+    def coc() { }
+
+    def hotel() { }
 }
