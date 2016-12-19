@@ -21,13 +21,21 @@ class ApiService {
     }
 
     @Cacheable(value = "speakers")
-    List getSpeakers() {
-        getData('speakers')
+    List getSpeakers(Integer id) {
+        List data = getData('speakers')
+        if(id) {
+            data = [data.find { it.id == id } ?: [:]]
+        }
+        data
     }
 
     @Cacheable(value = "talks")
-    List getTalks() {
-        getData('talks')
+    List getTalks(Integer id) {
+        List data = getData('talks')
+        if(id) {
+            data = [data.find { it.id == id } ?: [:]]
+        }
+        data
     }
 
     @Cacheable(value = "agenda")

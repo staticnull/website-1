@@ -1,22 +1,22 @@
 package us.gr8conf.website
 
-import grails.converters.JSON
-
 class DataController {
     ApiService apiService
 
-    def speakers() {
-        List speakers = apiService.speakers
-        render speakers as JSON
+    def speakers(Integer id) {
+        List speakers = apiService.getSpeakers(id)
+
+        respond speakers, [model: [speakers: speakers]]
     }
 
-    def talks() {
-        List talks = apiService.talks
-        render talks as JSON
+    def talks(Integer id) {
+        List talks = apiService.getTalks(id)
+
+        respond talks, [model: [talks: talks]]
     }
 
     def agenda() {
         List agenda = apiService.agenda
-        render agenda as JSON
+        respond agenda, [model: [agenda: agenda]]
     }
 }

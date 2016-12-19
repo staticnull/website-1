@@ -46,7 +46,6 @@ environments:
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
 
 ---
----
 grails:
     profile: web
     codegen:
