@@ -1,4 +1,4 @@
-import us.gr8conf.website.*
+package us.gr8conf.website
 
 class BootStrap {
 

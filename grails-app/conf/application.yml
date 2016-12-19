@@ -4,7 +4,7 @@ hibernate:
         queries: false
         use_second_level_cache: true
         use_query_cache: false
-        region.factory_class: 'org.hibernate.cache.ehcache.EhCacheRegionFactory'
+        region.factory_class: 'org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory'
 
 dataSource:
     pooled: true
@@ -60,7 +60,8 @@ info:
         version: '@info.app.version@'
         grailsVersion: '@info.app.grailsVersion@'
 spring:
-
+    main:
+        banner-mode: "off"
     groovy:
         template:
             check-template-location: false
