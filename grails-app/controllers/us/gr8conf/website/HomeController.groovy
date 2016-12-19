@@ -7,4 +7,6 @@ class HomeController {
     def coc() { }
 
     def hotel() { }
+
+    def sponsors() { }
 }
