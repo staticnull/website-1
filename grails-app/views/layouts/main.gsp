@@ -13,16 +13,25 @@
 <body>
 
     <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-        <a class="navbar-brand" href="#">GR8CONF US</a>
+        <a class="navbar-brand" href="/">GR8CONF US</a>
         <ul class="nav navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Schedule</a>
+                <a class="nav-link" href="${createLink(controller: "home", action: "coc")}">Code of Conduct</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sponsors</a>
+                <a class="nav-link" href="${createLink(controller: "data", action: "agenda")}">Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "home", action: "sponsors")}">Sponsors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "data", action: "talks")}">Talks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "home", action: "hotel")}">Hotel</a>
             </li>
         </ul>
     </nav>

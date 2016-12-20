@@ -4,11 +4,13 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
+<br/>
+<br/>
 <section class="page-block">
     <div class="container">
         <h1>Welcome to GR8Conf US 2016!</h1>
         <div class="row">
-            <div class="col-sm-9 col-xs-12">
+            <div class="col-sm-12 col-xs-12">
                 <p class="lead"> Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf. </p>
                 <p> <a href="http://gr8conf.org">GR8Conf</a> is an independent, affordable series of conferences in <a href="http://gr8conf.eu">Denmark</a>, <a href="http://gr8conf.in">India</a> and the <a href="http://gr8conf.us">US</a>. It's dedicated to
                 the technologies in the <a href="http://www.groovy-lang.org">Groovy ecosystem</a>. </p>
