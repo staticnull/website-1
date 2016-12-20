@@ -9,4 +9,8 @@ class HomeController {
     def hotel() { }
 
     def sponsors() { }
+
+    def venue() { }
+
+    def mobile() {  }
 }

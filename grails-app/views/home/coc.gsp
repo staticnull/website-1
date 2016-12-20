@@ -1,3 +1,9 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="layout" content="main"/>
+</head>
+<body>
 <section class="page-block">
     <div class="container">
         <h1>Code of Conduct</h1>
@@ -45,3 +51,4 @@
         </div>
     </div>
 </section>
+</body>

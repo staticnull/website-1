@@ -11,27 +11,35 @@
     <g:layoutHead/>
 </head>
 <body>
-
-    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <nav class="navbar navbar-dark bg-inverse">
         <a class="navbar-brand" href="/">GR8CONF US</a>
         <ul class="nav navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="${createLink(controller: "home", action: "coc")}">Code of Conduct</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="${createLink(controller: "data", action: "agenda")}">Schedule</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="${createLink(controller: "home", action: "sponsors")}">Sponsors</a>
+                <a class="nav-link" href="${createLink(controller: "data", action: "speakers")}">Speakers</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="${createLink(controller: "data", action: "talks")}">Talks</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "data", action: "agenda")}">Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "home", action: "venue")}">Venue</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="${createLink(controller: "home", action: "hotel")}">Hotel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "home", action: "sponsors")}">Sponsors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "home", action: "coc")}">Code of Conduct</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="${createLink(controller: "home", action: "mobile")}">Mobile</a>
             </li>
         </ul>
     </nav>

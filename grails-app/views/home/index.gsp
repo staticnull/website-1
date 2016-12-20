@@ -8,7 +8,10 @@
 <br/>
 <section class="page-block">
     <div class="container">
-        <h1>Welcome to GR8Conf US 2016!</h1>
+        <h1>Welcome to GR8Conf US 2017!</h1>
+        <div class="row">
+            <div class="col-md-3"> <a href="https://ti.to/gr8conf/gr8conf-2017"> <button class="btn btn-lg btn-default"> <span class="fa fa-ticket register">&nbsp;Buy Ticket</span> </button> </a> </div>
+        </div>
         <div class="row">
             <div class="col-sm-12 col-xs-12">
                 <p class="lead"> Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf. </p>
