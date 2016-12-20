@@ -15,7 +15,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <a href="http://objectpartners.com"> <asset:image src="sponsors/objectpartners.png"/> </a>
+                <a href="http://objectpartners.com"> <asset:image class="img-responsive center-block" src="sponsors/objectpartners.png"/> </a>
                 <div>
                     <p> Object Partners develops custom web and mobile applications using Java, JavaScript, Groovy, iOS, Android, and hybrid mobile platforms. We’ve become the go to Grails consulting company and training partner for clients all over the US,
                     as well as a technology leader in building modern front-end applications with technologies like Angular, React, and Bootstrap. Our enterprise experience means deep knowledge of real time data architecture, development, and messaging.
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <a href="http://ociweb.com"> <asset:image src="sponsors/oci.png"/> </a>
+                <a href="http://ociweb.com"> <asset:image class="img-responsive center-block" src="sponsors/oci.png"/> </a>
                 <div>
                     <p><strong>OCI is Home to Grails</strong> Graeme Rocher, Grails co-founder and project lead, and Jeff Brown, principal software engineer and senior member of the Grails core development team, have joined OCI to lead the OCI Grails Team.</p>
                     <p>The OCI Grails Team is available to provide up to 24/7 real-time technical support for Grails. Our team of seasoned architects and engineers can assist you with:</p>
@@ -45,21 +45,21 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <a href="https://corporate.target.com/careers/career-areas/technology"> <asset:image src="sponsors/target.jpg"/> </a>
+                <a href="https://corporate.target.com/careers/career-areas/technology"> <asset:image class="img-responsive center-block" src="sponsors/target.jpg"/> </a>
                 <div>
                     <p> Target is building a domestic engineering team at our Headquarters in Minneapolis Minnesota. This is one of many strategic changes happening around us every day. Today is the day to be involved in something that will not only change
                     our culture but also the face of retail. We need strong technical talent like you. Join us! -- <a href="https://codewithtarget.com">https://codewithtarget.com</a> </p>
                 </div>
             </div>
             <div class="col-md-6">
-                <a href="http://www.gr8ladies.org"> <asset:image src="sponsors/gr8ladies.png"/> </a>
+                <a href="http://www.gr8ladies.org"> <asset:image class="img-responsive center-block" src="sponsors/gr8ladies.png"/> </a>
                 <div>
                     <p> Gr8Ladies is an organization for the support of women in the Gr8 (Groovy, Grails, Gradle, etc) community. Although our mission is to bring more women into the Gr8 community, our events are always open to anyone of any gender! We could
                     never achieve our mission without allies. We strive to create a warm welcoming environment for individuals at every stage of their programming careers. </p>
                 </div>
             </div>
             <div class="col-md-6">
-                <a href="http://www.tothenew.com"> <asset:image src="sponsors/tothenew.png"/> </a>
+                <a href="http://www.tothenew.com"> <asset:image class="img-responsive center-block" src="sponsors/tothenew.png"/> </a>
                 <div>
                     <p> TO THE NEW Digital is a premium digital services company that combines the power of technology, analytics, creative and content for digital transformation. We are experts in developing business-critical applications using Groovy and
                     Grails. TO THE NEW Digital boasts of: </p>
