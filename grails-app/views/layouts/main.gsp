@@ -11,9 +11,9 @@
     <g:layoutHead/>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-inverse">
+    <nav class="navbar navbar-static-top navbar-light bg-faded" role="navigation">
         <a class="navbar-brand" href="/">GR8CONF US</a>
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav pull-right">
             <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
             </li>
@@ -44,22 +44,17 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="template">
-            <g:layoutBody/>
-        </div>
-    </div>
+    <g:layoutBody/>
 
-    <div class="contacts"> <h3>Contact Info</h3> <h5>E-mail:</h5> <p><a href="mailto:contact@gr8conf.us">contact@gr8conf.us</a></p> </div>
-
-    <div class="contacts">
-        <h3>Social</h3>
-        <div class="">
+    <!-- FOOTER -->
+    <footer class="">
+        <div class="container text-center">
             <a href="https://twitter.com/gr8confus" class="tooltipped fa fa-twitter" data-placement="top" title="Twitter"></a>
             <a href="https://facebook.com/GR8ConfUS" class="tooltipped fa fa-facebook" data-placement="top" title="Facebook"></a>
             <a href="https://plus.google.com/u/2/b/104542830138634018656/104542830138634018656/posts" class="tooltipped fa fa-google-plus" data-placement="top" title="Google+"></a>
+            <a href="mailto:contact@gr8conf.us">contact@gr8conf.us</a>
         </div>
-    </div>
+    </footer>
 
     <asset:javascript src="application.js"/>
 </body>

@@ -4,14 +4,56 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
+
+<!-- Carousel ================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    %{--<ol class="carousel-indicators">--}%
+        %{--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>--}%
+        %{--<li data-target="#myCarousel" data-slide-to="1"></li>--}%
+        %{--<li data-target="#myCarousel" data-slide-to="2"></li>--}%
+    %{--</ol>--}%
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item skyline-bg active">
+            <div class="container" >
+                <div class="carousel-caption text-xs-left opacity-70 p-a-lg" style="background: rgba(104, 175, 60, 0.7);">
+                    <h1>Welcome to GR8Conf 2017!</h1>
+                    <p>Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf.</p>
+                    <p><a class="btn btn-lg btn-primary" role="button" href="https://ti.to/gr8conf/gr8conf-2017"> <span class="fa fa-ticket"></span> Buy Ticket</a> </p>
+                </div>
+            </div>
+        </div>
+        %{--<div class="carousel-item">--}%
+            %{--<div class="container">--}%
+                %{--<div class="carousel-caption">--}%
+                    %{--<h1>Another example headline.</h1>--}%
+                    %{--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>--}%
+                    %{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
+        %{--</div>--}%
+        %{--<div class="carousel-item">--}%
+            %{--<div class="container">--}%
+                %{--<div class="carousel-caption text-xs-right">--}%
+                    %{--<h1>One more for good measure.</h1>--}%
+                    %{--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>--}%
+                    %{--<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
+        %{--</div>--}%
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><!-- /.carousel -->
+
 <section class="page-block">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Welcome to GR8Conf US 2017!</h1>
-                <div class="lead"> Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf. </div>
-                <div> <a href="https://ti.to/gr8conf/gr8conf-2017"> <button class="btn btn-lg btn-default"> <span class="fa fa-ticket register">&nbsp;Buy Ticket</span> </button> </a> </div>
-            </div>
             <p> <a href="http://gr8conf.org">GR8Conf</a> is an independent, affordable series of conferences in <a href="http://gr8conf.eu">Denmark</a>, <a href="http://gr8conf.in">India</a> and the <a href="http://gr8conf.us">US</a>. It's dedicated to
             the technologies in the <a href="http://www.groovy-lang.org">Groovy ecosystem</a>. </p>
             <p> We have in-depth talks covering all major technologies in the Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers
@@ -32,7 +74,6 @@
             </div>
             <p> Some of the technologies covered are <a href="http://www.groovy-lang.org">Groovy</a>, <a href="https://grails.org">Grails</a>, <a href="https://ratpack.io">Ratpack</a>, <a href="http://gradle.org">Gradle</a>, <a href="http://spockframework.org">Spock</a> and many many more!</p>
         </div>
-    </div>
 </section>
 
 </body>
