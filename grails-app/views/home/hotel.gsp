@@ -1,13 +1,18 @@
-
 <!doctype html>
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <title>Hotel - GR8Conf</title>
 </head>
 <body>
 <section class="page-block">
     <div class="container">
-        <h1>Hotel</h1>
+        <div class="row">
+            <div class="col-12">
+                <h1>Hotel</h1>
+                <p class="lead"> Stay nearby at the DoubleTree Suites. </p>
+            </div>
+        </div>
         <div class="row">
             <table>
                 <tbody>
@@ -30,3 +35,4 @@
     </div>
 </section>
 </body>
+</html>

@@ -2,11 +2,17 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <title>Talks - GR8Conf</title>
 </head>
 <body>
 <section class="page-block">
     <div class="container">
-        <h1>Speakers</h1>
+        <div class="row">
+            <div class="col-12">
+                <h1>Talks</h1>
+                <p class="lead"> Learn from the best and brightest in our community. </p>
+            </div>
+        </div>
         <div class="row">
             <div class="talks">
             <g:set value="${talks.size()}" var="talkCount"/>
@@ -38,3 +44,4 @@
     </div>
 </section>
 </body>
+</html>

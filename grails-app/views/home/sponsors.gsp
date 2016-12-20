@@ -2,10 +2,17 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <title>Sponsors - GR8Conf</title>
 </head>
 <body>
 <section class="page-block">
-    <div class="container sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Sponsors</h1>
+                <p class="lead">Check out the great companies sponsoring GR8Conf US. </p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <a href="http://objectpartners.com"> <asset:image src="sponsors/objectpartners.png"/> </a>
@@ -72,3 +79,4 @@
     </div>
 </section>
 </body>
+</html>

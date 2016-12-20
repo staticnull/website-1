@@ -2,11 +2,17 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <title>Speakers - GR8Conf</title>
 </head>
 <body>
 <section class="page-block">
     <div class="container">
-        <h1>Speakers</h1>
+        <div class="row">
+            <div class="col-12">
+                <h1>Speakers</h1>
+                %{--<p class="lead"> </p>--}%
+            </div>
+        </div>
         <div class="row">
             <div class="speakers">
                 <g:set var="numSpeakers" value="${speakers.size()}"/>
@@ -35,3 +41,4 @@
     </div>
 </section>
 </body>
+</html>
