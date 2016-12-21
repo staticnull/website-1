@@ -76,7 +76,7 @@ task wrapper(type: Wrapper) {
 }
 
 bootRun {
-    jvmArgs = ['-Dspring.output.ansi.enabled=always']
+    jvmArgs('-Dspring.output.ansi.enabled=always')
 }
 
 assets {
