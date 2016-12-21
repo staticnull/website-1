@@ -16,9 +16,9 @@
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item skyline-bg active">
             <div class="container" >
-                <div class="carousel-caption text-xs-left opacity-70 p-a-lg" style="background: rgba(104, 175, 60, 0.7);">
+                <div class="carousel-caption text-xs-left opacity-70 p-a-lg" style="background: rgba(0, 0, 0, 0.5);">
                     <h1>Welcome to GR8Conf 2017!</h1>
-                    <p>Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf.</p>
+                    <h3>July 26-28</h3>
                     <p><a class="btn btn-lg btn-primary" role="button" href="https://ti.to/gr8conf/gr8conf-2017"> <span class="fa fa-ticket"></span> Buy Ticket</a> </p>
                 </div>
             </div>
@@ -42,18 +42,20 @@
             %{--</div>--}%
         %{--</div>--}%
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+    %{--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">--}%
+        %{--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>--}%
+        %{--<span class="sr-only">Previous</span>--}%
+    %{--</a>--}%
+    %{--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">--}%
+        %{--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--}%
+        %{--<span class="sr-only">Next</span>--}%
+    %{--</a>--}%
 </div><!-- /.carousel -->
 
 <section class="page-block">
     <div class="container">
+        <p>Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf.</p>
+
         <p> <a href="http://gr8conf.org">GR8Conf</a> is an independent, affordable series of conferences in <a href="http://gr8conf.eu">Denmark</a>, <a href="http://gr8conf.in">India</a> and the <a href="http://gr8conf.us">US</a>. It's dedicated to
         the technologies in the <a href="http://www.groovy-lang.org">Groovy ecosystem</a>. </p>
         <p> We have in-depth talks covering all major technologies in the Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers
