@@ -8,6 +8,7 @@ import org.hibernate.annotations.Cache
 
 class ApiService {
     GrailsApplication grailsApplication
+    def EMPTY_LIST = [:]
 
     private Config getConfig() {
         grailsApplication.config
@@ -25,7 +26,7 @@ class ApiService {
     List getSpeakers(Integer id) {
         List data = getData('speakers')
         if(id) {
-            data = [data.find { it.id == id } ?: [:]]
+            data = [data.find { it.id == id } ?: EMPTY_LIST]
         }
         data
     }
@@ -34,21 +35,25 @@ class ApiService {
     List getTalks(Integer id) {
         List data = getData('talks')
         if(id) {
-            data = [data.find { it.id == id } ?: [:]]
+            data = [data.find { it.id == id } ?: EMPTY_LIST]
         }
         data
     }
 
     @Cacheable(value = "agenda")
-    List getAgenda() {
-        getData('agenda')
+    List getAgenda(String day) {
+        List data = getData('agenda')
+        if(day) {
+            data = [data.find { it.day == day } ?: EMPTY_LIST]
+        }
+        data
     }
 
     @Cacheable(value = "tags")
     List getTags(String tag) {
         List data = getData('tags')
         if(tag) {
-            data = [data.find { it.tag == tag } ?: [:]]
+            data = [data.find { it.tag == tag } ?: EMPTY_LIST]
         }
         data
     }

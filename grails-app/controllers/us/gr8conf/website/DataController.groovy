@@ -15,8 +15,8 @@ class DataController {
         respond talks, [model: [talks: talks]]
     }
 
-    def agenda() {
-        List agenda = apiService.agenda
+    def agenda(String day) {
+        List agenda = apiService.getAgenda(day)
         respond agenda, [model: [agenda: agenda]]
     }
 
