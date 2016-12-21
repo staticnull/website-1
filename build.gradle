@@ -68,6 +68,8 @@ clientDependencies {
         'bootstrap'('v3.3.7')
         'jquery'('3.1.1')
         'jquery.countdown'('2.2.0')
+        'fullcalendar'('3.1.0')
+        'fullcalendar-scheduler'('1.5.0')
     }
 }
 

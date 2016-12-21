@@ -41,7 +41,7 @@ class ApiService {
     }
 
     @Cacheable(value = "agenda")
-    List getAgenda(String day) {
+    List getAgenda(String day = null) {
         List data = getData('agenda')
         if(day) {
             data = [data.find { it.day == day } ?: EMPTY_LIST]

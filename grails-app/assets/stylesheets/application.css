@@ -3,4 +3,6 @@
 *= require bootstrap/css/bootstrap.css
 *= require fontawesome/css/font-awesome.css
 *= require carousel.css
+*= require fullcalendar/fullcalendar.css
+*= require fullcalendar-scheduler/scheduler.css
 */
