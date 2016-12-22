@@ -11,6 +11,4 @@ class HomeController {
     def sponsors() { }
 
     def venue() { }
-
-    def mobile() {  }
 }

@@ -17,11 +17,11 @@
             <div class="talks">
             <g:set value="${talks.size()}" var="talkCount"/>
             <g:each in="${talks}" var="talk">
-                <div class="talk">
+                <div class="talk col-md-6">
                     <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a></p>
                     <div class="tags">
                     <g:each in="${talk.tags}" var="tag">
-                        <span class="label label-primary">${tag}</span>
+                        <span class="label label-info">${tag}</span>
                     </g:each>
                     </div>
                     <g:if test="${talkCount == 1}">

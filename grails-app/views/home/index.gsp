@@ -74,6 +74,14 @@
         </div>
         <p> Some of the technologies covered are <a href="http://www.groovy-lang.org">Groovy</a>, <a href="https://grails.org">Grails</a>, <a href="https://ratpack.io">Ratpack</a>, <a href="http://gradle.org">Gradle</a>, <a href="http://spockframework.org">Spock</a> and many many more!</p>
     </div>
+    <div class="container">
+        <div class="col-xs-6">
+            <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1132982690&mt=8" target="_blank"> <asset:image class="img-responsive center-block" src="en-appstore-badge.f146e120.png" style="zoom: 25%;"/> </a>
+        </div>
+        <div class="col-xs-6">
+            <a href="https://play.google.com/store/apps/details?id=com.ninerhinos.groovyconf" target="_blank"> <asset:image class="img-responsive center-block" src="en-play-badge.1b2a9d58.png" style="zoom: 25%;"/> </a>
+        </div>
+    </div>
 </section>
 
 </body>

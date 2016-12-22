@@ -10,15 +10,15 @@
         <div class="row">
             <div class="col-12">
                 <h1>Speakers</h1>
-                %{--<p class="lead"> </p>--}%
+                %{--<p class="lead">Learn from the best and brightest of our community.</p>--}%
             </div>
         </div>
         <div class="row">
             <div class="speakers">
                 <g:set var="numSpeakers" value="${speakers.size()}"/>
                 <g:each in="${speakers}" var="speaker">
-                    <div class="speaker-detail col-md-6 col-sm-12">
-                        <a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}"><img class="speaker-img img-circle pull-left" src="${speaker.image}"></a>
+                    <div class="speaker-detail col-md-6 col-xs-12">
+                        <a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}"><img class="speaker-img img-circle pull-left img-responsive" src="${speaker.image}"></a>
                         <h4><a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}">${speaker.name}</a></h4>
                         <g:if test="${speaker.twitter}">
                             <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}">https://twitter.com/${speaker.twitter}</a>

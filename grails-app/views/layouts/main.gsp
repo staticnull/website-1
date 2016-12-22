@@ -48,9 +48,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="${createLink(controller: "home", action: "coc")}">Code of Conduct</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="${createLink(controller: "home", action: "mobile")}">Mobile</a>
-                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
