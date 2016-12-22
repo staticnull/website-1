@@ -71,7 +71,7 @@ class ApiService {
                             start: "${agendaDay}T${slot.start}",
                             end: "${agendaDay}T${slot.end}",
                             title: slot.talk.title,
-                            url: grailsLinkGenerator.link(controller: "data", action: "talks", params: [id: slot.talk.id])
+                            url: "${grailsLinkGenerator.link(controller: "talks")}/${slot.talk.id}"
                         ])
                     }
                 } else {

@@ -5,10 +5,15 @@
         <meta name="layout" content="main">
         <g:if env="development"><asset:stylesheet src="errors.css"/></g:if>
     </head>
-    <body>
-        <ul class="errors">
-            <li>Error: Page Not Found (404)</li>
-            <li>Path: ${request.forwardURI}</li>
-        </ul>
-    </body>
+<body>
+    <br/>
+    <div class="row">
+        <div class="col-sm-3 col-xs-hidden"></div>
+        <div class="col-sm-6 col-xs-12">
+        <pre>
+pages.find { it == "${request?.forwardURI?.encodeAsHTML()}" } == null
+// Page Not Found (404)</pre>
+        </div>
+    </div>
+</body>
 </html>
