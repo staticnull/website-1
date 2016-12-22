@@ -18,7 +18,7 @@
                 <td valign="top" colspan="2"> <asset:image src="venue/schulze-hall.f998c1a3.jpg" width="100%"/><br>
                     <p class="vcard"> <a href="http://www.stthomas.edu/business/visitors/campuses">University of St. Thomas</a> - Schulze Hall<br> 46 S 11th St Minneapolis, MN 55403<br> [<a href="https://www.google.com/maps/place/Schulze+Hall/@44.974123,-93.2798526,17z/data=!3m1!4b1!4m5!3m4!1s0x52b332944d7d30f9:0x169d5a902717f38e!8m2!3d44.974123!4d-93.2776639">Directions</a>]
                     [<a href="https://www.google.com/maps/search/parking/@44.9741229,-93.2798526,17z/data=!3m1!4b1!4m8!2m7!3m6!1sparking!2sSchulze+Hall,+46+S+11th+St,+Minneapolis,+MN+55403!3s0x52b332944d7d30f9:0x169d5a902717f38e!4m2!1d-93.2776639!2d44.974123">Parking</a>]
-                    [<a href="#/travel">Hotel</a>] </p>
+                    [<a href="${createLink(controller:"home", action: "hotel")}">Hotel</a>] </p>
                 </td>
                 <td valign="top">
                     <a href="${assetPath(src: 'venue/schulze-hall-location.89247f39.png')}"><asset:image src="venue/preview-schulze-hall-street.3f647e65.png" width="100%"/></a><br> <a href="${assetPath(src: 'venue/schulze-hall-location.89247f39.png')}">Schulze Hall Street View</a><br>
