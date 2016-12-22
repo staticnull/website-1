@@ -73,9 +73,9 @@
     </div>
 
     <div class="footer-left">
-
-        <p class="footer-links"></p>
-
+        <p>
+            <a href="http://prettygoodconferences.org/"><span style="color:white;">Pretty Good Conferences</span> </a>
+        </p>
         <p>Gr8Conf US &copy; ${Calendar.getInstance().get(Calendar.YEAR)}</p>
     </div>
     </div>
