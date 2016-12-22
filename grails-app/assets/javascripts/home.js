@@ -72,7 +72,10 @@ $(function() {
             { id: 'Law School 235', title: 'Law School 235', eventColor: 'orange' },
             { id: 'Law School 238', title: 'Law School 238', eventColor: 'red' }
         ],
-        events: "/data/fullCalendar.json",
+        events: {
+            url: "/data/fullCalendar.json",
+            cache: true
+        },
         eventAfterAllRender: function() {
             // Extend all track events across all resources.
             // Hax
