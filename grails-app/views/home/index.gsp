@@ -12,7 +12,7 @@
                 <div class="carousel-caption text-xs-left opacity-70 p-a-lg" style="background: rgba(0, 0, 0, 0.5);padding-bottom:0px">
                     <h1>Welcome to GR8Conf ${grailsApplication.config.gr8conf.dates.year}!</h1>
                     <h3>${grailsApplication.config.gr8conf.dates.humanRange}</h3>
-                    <h4><div id="the-final-countdown"></div></h4>
+                    <h4><div id="the-final-countdown">.</div></h4>
                     <p><a class="btn btn-lg btn-info btn-raised" role="button" href="https://ti.to/gr8conf/gr8conf-${grailsApplication.config.gr8conf.dates.year}"> <span class="fa fa-ticket"></span> Buy Ticket</a></p>
                 </div>
             </div>
@@ -28,18 +28,27 @@
         the technologies in the <a href="http://www.groovy-lang.org">Groovy ecosystem</a>. </p>
         <p> We have in-depth talks covering all major technologies in the Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers
         in the Groovy Community. </p>
+    </div>
+</section>
 
-        <div class="row">
-            <div class="col-xs-6">
-                <a href="http://www.groovy-lang.org"><asset:image class="img-responsive center-block" src="groovy.563dbc4a.png"/></a>
-                <a href="https://grails.org"><asset:image class="img-responsive center-block" src="grails.d53f98b2.png"/></a>
-            </div>
-            <div class="col-xs-6">
-                <a href="https://ratpack.io"><asset:image class="img-responsive center-block" src="ratpack.1bdf8ef2.png"/></a>
-                <a href="http://spockframework.org"><asset:image class="img-responsive center-block" style="height:125px; width:125px" src="spock.png"/></a>
-            </div>
+<section class="page-block" style="background-color:#4298b8;">
+    <div class="container" style="padding:10px;">
+        <div class="col-xs-6">
+            <a href="http://www.groovy-lang.org"><asset:image style="height:125px;" class="img-responsive center-block" src="groovy-logo-white.svg"/></a>
+            <a href="https://ratpack.io"><asset:image class="img-responsive center-block" src="ratpack.1bdf8ef2.png"/></a>
         </div>
-        <p> Some of the technologies covered are <a href="http://www.groovy-lang.org">Groovy</a>, <a href="https://grails.org">Grails</a>, <a href="https://ratpack.io">Ratpack</a>, <a href="http://gradle.org">Gradle</a>, <a href="http://spockframework.org">Spock</a> and many many more!</p>
+        <div class="col-xs-6">
+            <a href="https://grails.org"><asset:image style="height:125px;" class="img-responsive center-block" src="grails-cupsonly-logo-white.svg"/></a>
+            <a href="http://spockframework.org"><asset:image class="img-responsive center-block" style="height:125px; width:125px" src="spock.png"/></a>
+        </div>
+    </div>
+</section>
+
+</br>
+
+<section class="page-block">
+    <div class="container">
+        Some of the technologies covered are <a href="http://www.groovy-lang.org">Groovy</a>, <a href="https://grails.org">Grails</a>, <a href="https://ratpack.io">Ratpack</a>, <a href="http://gradle.org">Gradle</a>, <a href="http://spockframework.org">Spock</a> and many many more!
     </div>
 </section>
 
