@@ -19,7 +19,7 @@
             <g:each in="${speakers}" var="speaker">
             <div class="list-group-item">
                 <div class="row-picture">
-                    <img class="circle" src="${speaker.image}" alt="icon">
+                    <img class="circle" src="${speaker.image}" alt="${speaker.name} profile image">
                 </div>
                 <div class="row-content">
                     <h4 class="list-group-item-heading"><a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}">${speaker.name}</a></h4>
