@@ -18,12 +18,13 @@
             <g:set value="${talks.size()}" var="talkCount"/>
             <g:each in="${talks}" var="talk">
                 <div class="talk col-md-6">
-                    <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a></p>
+                    <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
                     <div class="tags">
                     <g:each in="${talk.tags}" var="tag">
                         <span class="label label-info">${tag}</span>
                     </g:each>
                     </div>
+                    </p>
                     <g:if test="${talkCount == 1}">
                         <p>${talk.level}</p>
                         <p>${raw(talk.summary)}</p>

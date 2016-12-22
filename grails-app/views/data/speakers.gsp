@@ -20,8 +20,8 @@
                     <div class="speaker-detail col-md-6 col-xs-12">
                         <a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}"><img class="speaker-img img-circle pull-left img-responsive" src="${speaker.image}"></a>
                         <h4><a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}">${speaker.name}</a></h4>
-                        <g:if test="${speaker.twitter}">
-                            <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}">https://twitter.com/${speaker.twitter}</a>
+                        <g:if test="${speaker?.twitter}">
+                            <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}">@${speaker.twitter}</a>
                         </g:if>
                         <g:if test="${numSpeakers == 1}">
                             <p>${speaker.company}</p>
