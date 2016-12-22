@@ -35,7 +35,7 @@
                         </g:each>
                         </ul>
                         <p>${talk.slot.duration} min</p>
-                        <p>${talk.slot.start} - ${talk.slot.end}</p>
+                        <div class="slotTime" data-start="${talk.slot.start}" data-end="${talk.slot.end}"></div>
                     </g:if>
                 </div>
                 <hr/>

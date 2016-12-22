@@ -1,7 +1,5 @@
 package us.gr8conf.website
 
-import grails.converters.JSON
-
 class DataController {
     ApiService apiService
 

@@ -15,6 +15,12 @@ $(function() {
         countDownDiv.html("See you next year!");
     }
 
+    // Convert to 12hour time for us Americans.
+    $(".slotTime").each(function() {
+        var start = $(this).data("start");
+        var end = $(this).data("end");
+        $(this).html(moment(start, "hh:mm:ss").format("h:mm A") + " - " + moment(end, "hh:mm:ss").format("h:mm A"))
+    });
 
 
     $('#calendar').fullCalendar({
