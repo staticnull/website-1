@@ -22,32 +22,44 @@ $(function() {
         allDaySlot: false,
         defaultView: 'agendaDay',
         defaultDate: '2016-07-27',
+        height: 'auto',
         minTime: "08:00:00",
-        maxTime: "18:00:00",
+        maxTime: "19:00:00",
         allDay: false,
         editable: false,
-        selectable: true,
-        eventLimit: true, // allow "more" link when too many events
+        selectable: false,
+        eventLimit: false,
         header: {
-            left: 'prev,next',
-            center: 'title',
-            right: 'agendaDay,agendaThreeDay'
+            left: 'title',
+            center: '',
+            right: 'prev,next'
         },
         views: {
-            agendaThreeDay: {
+            agendaDay: {
                 type: 'agenda',
-                duration: { days: 3 },
-                // views that are more than a day will NOT do this behavior by default
-                // so, we need to explicitly enable it
-                groupByResource: true
-                //// uncomment this line to group by day FIRST with resources underneath
-                // groupByDateAndResource: true
+                duration: { days: 1 },
+                groupByResource: true // grouping by rooms
             }
         },
-        height: 'auto',
+        // Do not allow navigation beyond conf dates.
+        viewRender: function(view,element) {
+            var now = new Date();
+            var startDate = moment("7/27/2016");
+            var endDate = moment("7/29/2016");
 
-        //// uncomment this line to hide the all-day slot
-        allDaySlot: false,
+            if ( endDate < view.end) {
+                $("#calendar .fc-next-button").prop("disabled",true);
+                return false;
+            } else {
+                $("#calendar .fc-next-button").prop("disabled",false);
+            }
+            if ( view.start < startDate) {
+                $("#calendar .fc-prev-button").prop("disabled",true);
+                return false;
+            } else {
+                $("#calendar .fc-prev-button").prop("disabled",false);
+            }
+        },
         resources: [
             { id: 'Schulze Hall Auditorium', title: 'Schulze Hall Auditorium' },
             { id: 'Schultze Hall 127', title: 'Schultze Hall 127', eventColor: 'green' },
@@ -56,11 +68,14 @@ $(function() {
         ],
         events: "/data/fullCalendar.json",
         eventAfterAllRender: function() {
+            // Extend all track events across all resources.
+            // Hax
             $(".allColumns")
                 .css('width', $("#calendar").width())
                 .css('background-color', "black")
                 .css('border-color', "black");
         },
+        // If a event has a url property, allow navigation.
         eventClick: function(calEvent, jsEvent, view) {
             if (calEvent.url) {
                 location.href= calEvent.url;

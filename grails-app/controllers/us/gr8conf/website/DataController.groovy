@@ -1,7 +1,6 @@
 package us.gr8conf.website
 
 import grails.converters.JSON
-import org.hibernate.id.GUIDGenerator
 
 class DataController {
     ApiService apiService
@@ -22,39 +21,8 @@ class DataController {
     }
 
     def fullCalendar() {
-        List agenda = apiService.getAgenda()
-        def result = []
-        agenda.each { date ->
-            def agendaDay = date.day
-            date.tracks.each { track ->
-                def room = track.name
-                if(!track.allColumns) {
-                    track.slots.each {slot->
-                        result.add([
-                            id: slot.talk.id,
-                            resourceId: room,
-                            start: "${agendaDay}T${slot.start}",
-                            end: "${agendaDay}T${slot.end}",
-                            title: slot.talk.title,
-                            url: createLink(controller: "data", action: "talks", params: [id: slot.talk.id])
-                        ])
-                    }
-                } else {
-                    track.slots.each { slot ->
-                        result.add([
-                            id: "${slot.name}",
-                            resourceId: "Schulze Hall Auditorium",
-                            start: "${agendaDay}T${slot.start}",
-                            end: "${agendaDay}T${slot.end}",
-                            title: slot.name,
-                            className: "allColumns"
-                        ])
-                    }
-                }
-            }
-        }
-
-        render result as JSON
+        List calendar = apiService.getCalendar()
+        respond calendar, [model: [calendar: calendar]]
     }
 
     def tags(String tag) {

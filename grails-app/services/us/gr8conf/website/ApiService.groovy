@@ -4,10 +4,10 @@ import grails.config.Config
 import grails.core.GrailsApplication
 import grails.plugin.cache.Cacheable
 import grails.plugins.rest.client.RestBuilder
-import org.hibernate.annotations.Cache
 
 class ApiService {
     GrailsApplication grailsApplication
+    def grailsLinkGenerator
     def EMPTY_LIST = [:]
 
     private Config getConfig() {
@@ -47,6 +47,48 @@ class ApiService {
             data = [data.find { it.day == day } ?: EMPTY_LIST]
         }
         data
+    }
+
+    /**
+     * FullCalendar.js requires the data to be listed in events rather than by tracks as the gr8conf api provides.
+     * This maps the data to fullCalendar's format.
+     * @return jsonMap compatible with fullCalendar.js
+     */
+    @Cacheable(value = "calendar")
+    List getCalendar() {
+        List data = getData('agenda')
+        List jsonMap = []
+
+        data.each { date ->
+            def agendaDay = date.day
+            date.tracks.each { track ->
+                def room = track.name
+                if(!track.allColumns) {
+                    track.slots.each {slot->
+                        jsonMap.add([
+                            id: slot.talk.id,
+                            resourceId: room,
+                            start: "${agendaDay}T${slot.start}",
+                            end: "${agendaDay}T${slot.end}",
+                            title: slot.talk.title,
+                            url: grailsLinkGenerator.link(controller: "data", action: "talks", params: [id: slot.talk.id])
+                        ])
+                    }
+                } else {
+                    track.slots.each { slot ->
+                        jsonMap.add([
+                            id: "${slot.name}",
+                            resourceId: "Schulze Hall Auditorium",
+                            start: "${agendaDay}T${slot.start}",
+                            end: "${agendaDay}T${slot.end}",
+                            title: slot.name,
+                            className: "allColumns"
+                        ])
+                    }
+                }
+            }
+        }
+        jsonMap
     }
 
     @Cacheable(value = "tags")
