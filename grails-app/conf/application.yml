@@ -127,3 +127,5 @@ gr8conf:
     dates:
         start: 2017-7-26
         end: 2017-7-28
+        year: 2017
+        humanRange: July 26-28 # parsing dates is fun and all, but this is easier.

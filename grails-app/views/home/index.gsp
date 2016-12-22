@@ -17,9 +17,10 @@
         <div class="carousel-item skyline-bg active">
             <div class="container" >
                 <div class="carousel-caption text-xs-left opacity-70 p-a-lg" style="background: rgba(0, 0, 0, 0.5);padding-bottom:0px">
-                    <h1>Welcome to GR8Conf 2017!</h1>
-                    <h3>July 26-28</h3>
-                    <p><a class="btn btn-lg btn-info btn-raised" role="button" href="https://ti.to/gr8conf/gr8conf-2017"> <span class="fa fa-ticket"></span> Buy Ticket</a> </p>
+                    <h1>Welcome to GR8Conf ${grailsApplication.config.gr8conf.dates.year}!</h1>
+                    <h3>${grailsApplication.config.gr8conf.dates.humanRange}</h3>
+                    <h4><div id="the-final-countdown"></div></h4>
+                    <p><a class="btn btn-lg btn-info btn-raised" role="button" href="https://ti.to/gr8conf/gr8conf-2017"> <span class="fa fa-ticket"></span> Buy Ticket</a></p>
                 </div>
             </div>
         </div>
@@ -60,7 +61,6 @@
         the technologies in the <a href="http://www.groovy-lang.org">Groovy ecosystem</a>. </p>
         <p> We have in-depth talks covering all major technologies in the Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers
         in the Groovy Community. </p>
-        <div id="the-final-countdown"></div>
 
         <div class="row">
             <div class="col-xs-6">
