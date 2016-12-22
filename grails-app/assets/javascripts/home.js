@@ -1,4 +1,6 @@
 $(function() {
+    $.material.init();
+
     const milliSecondsInDay = 24*60*60*1000;
     var now = Date.now(); // testing Date.parse('2017/7/19');
     var gr8ConfStartDate = Date.parse('2017/7/26');

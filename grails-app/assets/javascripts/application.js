@@ -1,6 +1,8 @@
 //= require jquery/jquery.js
 //= require jquery.countdown/jquery.countdown.js
 //= require bootstrap/js/bootstrap.js
+//= require bootstrap-material-design/js/material.js
+//= require bootstrap-material-design/js/ripples.js
 //= require moment/moment.js
 //= require fullcalendar/fullcalendar.js
 //= require fullcalendar-scheduler/scheduler.js

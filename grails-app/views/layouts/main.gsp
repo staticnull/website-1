@@ -7,11 +7,14 @@
     <title>
         <g:layoutTitle default="GR8Conf US"/>
     </title>
-    <asset:stylesheet src="application.css"/>
-    <g:layoutHead/>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+      <asset:stylesheet src="application.css"/>
+      <asset:link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+      <g:layoutHead/>
 </head>
 <body>
-    <nav class="navbar navbar-default" style="margin-bottom: 0px;">
+    <nav class="navbar navbar-info" style="margin-bottom: 0px;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

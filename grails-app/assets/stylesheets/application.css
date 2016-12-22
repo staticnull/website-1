@@ -1,6 +1,8 @@
 /*
 *= require_self
 *= require bootstrap/css/bootstrap.css
+*= require bootstrap-material-design/css/bootstrap-material-design.css
+*= require bootstrap-material-design/css/ripples.css
 *= require fontawesome/css/font-awesome.css
 *= require carousel.css
 *= require fullcalendar/fullcalendar.css
