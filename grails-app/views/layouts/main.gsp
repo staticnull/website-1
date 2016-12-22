@@ -7,11 +7,18 @@
     <title>
         <g:layoutTitle default="GR8Conf US"/>
     </title>
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
-      <asset:stylesheet src="application.css"/>
-      <asset:link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-      <g:layoutHead/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <asset:stylesheet src="application.css"/>
+    <asset:link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <script>
+      // Globals for dates
+      var gr8ConfStart = "${grailsApplication.config.gr8conf.dates.start}";
+      var gr8ConfEnd = "${grailsApplication.config.gr8conf.dates.end}";
+      var gr8ConfYear = "${grailsApplication.config.gr8conf.dates.year}";
+    </script>
+    <g:layoutHead/>
+
 </head>
 <body>
     <nav class="navbar navbar-info" style="margin-bottom: 0px;">

@@ -1,14 +1,12 @@
 $(function() {
     $.material.init();
-
-    const milliSecondsInDay = 24*60*60*1000;
-    var now = Date.now(); // testing Date.parse('2017/7/19');
-    var gr8ConfStartDate = Date.parse('2017/7/26');
-    var gr8ConfEndDate = Date.parse('2017/7/28');
+    var now = moment(); // testing moment('2017-7-19');
+    var gr8ConfStartDate = moment(gr8ConfStart);
+    var gr8ConfEndDate = moment(gr8ConfEnd);
     var countDownDiv = $('#the-final-countdown');
 
     if(now < gr8ConfStartDate) {
-        countDownDiv.countdown(gr8ConfStartDate, function (event) {
+        countDownDiv.countdown(gr8ConfStartDate.toDate(), function (event) {
             $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
         });
     } else if(now >= gr8ConfStartDate && now <= gr8ConfEndDate) {
@@ -23,7 +21,7 @@ $(function() {
         schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
         allDaySlot: false,
         defaultView: 'agendaDay',
-        defaultDate: '2016-07-27',
+        defaultDate: '2016-07-27', // gr8ConfStart
         height: 'auto',
         minTime: "08:00:00",
         maxTime: "19:00:00",
@@ -46,8 +44,8 @@ $(function() {
         // Do not allow navigation beyond conf dates.
         viewRender: function(view,element) {
             var now = new Date();
-            var startDate = moment("7/27/2016");
-            var endDate = moment("7/29/2016");
+            var startDate = moment("7/27/2016"); // gr8ConfStart
+            var endDate = moment("7/29/2016"); // gr8ConfEnd
 
             if ( endDate < view.end) {
                 $("#calendar .fc-next-button").prop("disabled",true);
