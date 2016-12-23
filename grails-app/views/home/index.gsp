@@ -92,6 +92,15 @@
                 </div>
             </div>
         </div>
+        <div class="item spock-slide slide-bg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Spock</h1>
+                    <p>The enterprise ready specification framework</p>
+                    <p><a class="btn btn-raised" href="http://spockframework.org/" role="button">spockframework.org</a></p>
+                </div>
+            </div>
+        </div>
     </div>
     <a class="left carousel-control" href="#techCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

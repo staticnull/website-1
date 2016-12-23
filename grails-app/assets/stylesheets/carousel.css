@@ -43,6 +43,15 @@
     background-color: #022a33;
     color: #22da27;
 }
+.spock-slide {
+    background-image: url('spock.png');
+    background-color: lightgray;
+}
+.spock-slide > .container > .carousel-caption > p > a {
+    background-color: #022a33;
+    color: #ff3332;
+    background-size: 80px 60px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
