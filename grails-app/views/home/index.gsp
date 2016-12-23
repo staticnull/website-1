@@ -23,12 +23,12 @@
 <section class="page-block">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <h3>GR8 Technology</h3>
                 <p>Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf.</p>
                 <p><a class="btn btn-info" href="${createLink(controller: "data", action: "speakers")}" role="button">Speakers &raquo;</a></p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <h3>GR8 Talks</h3>
                 <p><p> We have in-depth talks covering all major technologies in the Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers in the Groovy Community.</p>
                 <p><a class="btn btn-info" href="${createLink(controller: "data", action: "talks")}" role="button">Talks &raquo;</a></p>
