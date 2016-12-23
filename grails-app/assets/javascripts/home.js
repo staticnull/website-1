@@ -7,7 +7,7 @@ $(function() {
 
     if(now < gr8ConfStartDate) {
         countDownDiv.countdown(gr8ConfStartDate.toDate(), function (event) {
-            $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+            $(this).html(event.strftime('%w weeks %-d days %-H:%M:%S'));
         });
     } else if(now >= gr8ConfStartDate && now <= gr8ConfEndDate) {
         countDownDiv.html("Gr8Conf is going on right now!");
