@@ -9,7 +9,7 @@
     <div class="carousel-inner" role="listbox">
         <div class="item active skyline-bg">
             <div class="container">
-                <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.5);padding-bottom:0px">
+                <div class="carousel-caption">
                     <h1>Welcome to GR8Conf ${grailsApplication.config.gr8conf.dates.year}!</h1>
                     <h3>${grailsApplication.config.gr8conf.dates.humanRange}</h3>
                     <h4><div id="the-final-countdown">.</div></h4>
@@ -42,43 +42,39 @@
         %{--<li data-target="#techCarousel" data-slide-to="3"></li>--}%
     %{--</ol>--}%
     <div class="carousel-inner" role="listbox">
-        <div class="item active" style="background-color: #4298b8">
-            <asset:image class="first-slide" src="groovy-logo-white.svg" alt="Groovy info slide"/>
+        <div class="item active groovy-slide slide-bg">
             <div class="container">
-                <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.5);padding-bottom:0px">
+                <div class="carousel-caption">
                     <h1>Groovy</h1>
                     <p>Powerful dynamic JVM language</p>
                     <p><a class="btn btn-lg btn-info btn-raised" href="http://groovy-lang.org" role="button">groovy-lang.org</a></p>
                 </div>
             </div>
         </div>
-        <div class="item" style="background-color: #79b94c;">
-            <asset:image class="second-slide" src="grails-cupsonly-logo-white.svg" alt="Grails info slide"/>
+        <div class="item grails-slide slide-bg">
             <div class="container">
-                <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.5);padding-bottom:0px">
+                <div class="carousel-caption">
                     <h1>Grails</h1>
                     <p>A powerful Groovy-based web application framework for the JVM built on top of Spring Boot</p>
-                    <p><a class="btn btn-lg btn-info btn-raised" href="https://grails.org" role="button" style="background-color:#79b94c">grails.org</a></p>
+                    <p><a class="btn btn-lg btn-info btn-raised" href="https://grails.org" role="button">grails.org</a></p>
                 </div>
             </div>
         </div>
-        <div class="item" style="background-color: #78d4b6;">
-            <asset:image src="Slack_Monochrome_White.svg" alt="slack info slide"/>
+        <div class="item slack-slide slide-bg">
             <div class="container">
-                <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.5);padding-bottom:0px">
+                <div class="carousel-caption">
                     <h1>Join the conversation</h1>
                     <p>Chat with GR8Conf attendees in the Groovy Community Slack</p>
-                    <p><a class="btn btn-info btn-raised" href="https://groovycommunity.com" role="button" style="background-color:#78d4b6">Join Slack</a></p>
+                    <p><a class="btn btn-info btn-raised" href="https://groovycommunity.com" role="button">Join Slack</a></p>
                 </div>
             </div>
         </div>
-        <div class="item" style="background-color: #fdc329;">
-            <asset:image src="martini-a40fa54e8fda7512f8131d59f031b9a3.svg" alt="ratpack info slide"/>
+        <div class="item ratpack-slide slide-bg">
             <div class="container">
-                <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.5);padding-bottom:0px">
+                <div class="carousel-caption">
                     <h1>Ratpack</h1>
                     <p>Lean & powerful HTTP apps</p>
-                    <p><a class="btn btn-info btn-raised" href="https://ratpack.io" role="button" style="background-color:#fdc329;">ratpack.io</a></p>
+                    <p><a class="btn btn-info btn-raised" href="https://ratpack.io" role="button">ratpack.io</a></p>
                 </div>
             </div>
         </div>
