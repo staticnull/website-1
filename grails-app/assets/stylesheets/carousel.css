@@ -24,7 +24,6 @@
 .slack-slide {
     background-image: url('Slack_Monochrome_White.svg');
     background-color: #78d4b6;
-
 }
 .slack-slide > .container > .carousel-caption > p > a {
     background-color: #78d4b6;
@@ -36,10 +35,14 @@
 .ratpack-slide > .container > .carousel-caption > p > a {
     background-color: #fdc329;
 }
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
+.gradle-slide {
+    background-image: url('gradle-1.svg');
+    background-color: lightgray;
+}
+.gradle-slide > .container > .carousel-caption > p > a {
+    background-color: #022a33;
+    color: #22da27;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -53,7 +56,7 @@
 .carousel-caption {
     z-index: 10;
     background: rgba(0, 0, 0, 0.5);
-    padding-bottom:0px;
+    padding-bottom:0;
 }
 
 /* Declare heights because of positioning of img element */

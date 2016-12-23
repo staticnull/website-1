@@ -56,7 +56,7 @@
                 <div class="carousel-caption">
                     <h1>Grails</h1>
                     <p>A powerful Groovy-based web application framework for the JVM built on top of Spring Boot</p>
-                    <p><a class="btn btn-lg btn-info btn-raised" href="https://grails.org" role="button">grails.org</a></p>
+                    <p><a class="btn btn-lg btn-raised" href="https://grails.org" role="button">grails.org</a></p>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                 <div class="carousel-caption">
                     <h1>Join the conversation</h1>
                     <p>Chat with GR8Conf attendees in the Groovy Community Slack</p>
-                    <p><a class="btn btn-info btn-raised" href="https://groovycommunity.com" role="button">Join Slack</a></p>
+                    <p><a class="btn  btn-raised" href="https://groovycommunity.com" role="button">Join Slack</a></p>
                 </div>
             </div>
         </div>
@@ -74,7 +74,16 @@
                 <div class="carousel-caption">
                     <h1>Ratpack</h1>
                     <p>Lean & powerful HTTP apps</p>
-                    <p><a class="btn btn-info btn-raised" href="https://ratpack.io" role="button">ratpack.io</a></p>
+                    <p><a class="btn btn-raised" href="https://ratpack.io" role="button">ratpack.io</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item gradle-slide slide-bg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Gradle</h1>
+                    <p>Build tool for the JVM</p>
+                    <p><a class="btn btn-raised" href="https://gradle.org" role="button">gradle.org</a></p>
                 </div>
             </div>
         </div>
