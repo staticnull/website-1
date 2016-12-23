@@ -14,33 +14,30 @@
             </div>
         </div>
         <div class="row">
-            <div class="talks">
-            <g:set value="${talks.size()}" var="talkCount"/>
-            <g:each in="${talks}" var="talk">
-                <div class="talk col-md-6">
-                    <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
-                    <div class="tags">
-                    <g:each in="${talk.tags}" var="tag">
-                        <span class="label label-info">${tag}</span>
-                    </g:each>
-                    </div>
-                    </p>
-                    <g:if test="${talkCount == 1}">
-                        <p>${talk.level}</p>
-                        <p>${raw(talk.summary)}</p>
-                        <p>Speakers</p>
-                        <ul>
-                        <g:each in="${talk?.speakers}" var="speaker">
-                            <li><a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}">${speaker.name}</a></li>
-                        </g:each>
-                        </ul>
-                        <p>${talk.slot.duration} min</p>
-                        <div class="slotTime" data-start="${talk.slot.start}" data-end="${talk.slot.end}"></div>
-                    </g:if>
+        <g:set value="${talks.size()}" var="talkCount"/>
+        <g:each in="${talks}" var="talk">
+            <div class="talk col-md-6">
+                <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
+                <div class="tags">
+                <g:each in="${talk.tags}" var="tag">
+                    <span class="label label-info">${tag}</span>
+                </g:each>
                 </div>
-                <hr/>
-            </g:each>
+                </p>
+                <g:if test="${talkCount == 1}">
+                    <p>${talk.level}</p>
+                    <p>${raw(talk.summary)}</p>
+                    <p>Speakers</p>
+                    <ul>
+                    <g:each in="${talk?.speakers}" var="speaker">
+                        <li><a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}">${speaker.name}</a></li>
+                    </g:each>
+                    </ul>
+                    <p>${talk.slot.duration} min</p>
+                    <div class="slotTime" data-start="${talk.slot.start}" data-end="${talk.slot.end}"></div>
+                </g:if>
             </div>
+        </g:each>
         </div>
     </div>
 </section>
