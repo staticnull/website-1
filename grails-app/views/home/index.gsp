@@ -7,7 +7,7 @@
 
 <div id="mainCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-        <div class="item active skyline-bg">
+        <div class="item active skyline-bg slide-bg">
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Welcome to GR8Conf ${grailsApplication.config.gr8conf.dates.year}!</h1>
@@ -22,17 +22,22 @@
 
 <section class="page-block">
     <div class="container">
-        <p>Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf.</p>
-
-        <p> <a href="http://gr8conf.org">GR8Conf</a> is an independent, affordable series of conferences in <a href="http://gr8conf.eu">Denmark</a>, <a href="http://gr8conf.in">India</a> and the <a href="http://gr8conf.us">US</a>. It's dedicated to
-        the technologies in the <a href="http://www.groovy-lang.org">Groovy ecosystem</a>. </p>
-        <p> We have in-depth talks covering all major technologies in the Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers
-        in the Groovy Community. </p>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>GR8 Technology</h3>
+                <p>Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf.</p>
+                <p><a class="btn btn-info" href="${createLink(controller: "data", action: "speakers")}" role="button">Speakers &raquo;</a></p>
+            </div>
+            <div class="col-lg-6">
+                <h3>GR8 Talks</h3>
+                <p><p> We have in-depth talks covering all major technologies in the Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers in the Groovy Community.</p>
+                <p><a class="btn btn-info" href="${createLink(controller: "data", action: "talks")}" role="button">Talks &raquo;</a></p>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- Carousel
-    ================================================== -->
+<!-- .carousel -->
 <div id="techCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     %{--<ol class="carousel-indicators">--}%
