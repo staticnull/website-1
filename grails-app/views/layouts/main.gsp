@@ -18,9 +18,10 @@
       var gr8ConfYear = "${grailsApplication.config.gr8conf.dates.year}";
     </script>
     <g:layoutHead/>
-
 </head>
 <body>
+<div id="wrapper">
+    <div id="header">
     <nav class="navbar navbar-info" style="margin-bottom: 0px;">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -59,10 +60,11 @@
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
-
+</div>
+<div id="content">
     <g:layoutBody/>
-
-<footer class="footer-distributed">
+</div>
+<div class="footer-distributed" id="footer">
     <div class="container">
     <div class="footer-right">
         %{--<a href="https://facebook.com/GR8ConfUS"><i class="fa fa-facebook"></i></a>--}%
@@ -79,8 +81,8 @@
         <p>Gr8Conf US &copy; ${Calendar.getInstance().get(Calendar.YEAR)}</p>
     </div>
     </div>
-</footer>
-
-    <asset:javascript src="application.js"/>
+</div>
+</div>
+<asset:javascript src="application.js"/>
 </body>
 </html>
