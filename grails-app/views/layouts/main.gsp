@@ -11,11 +11,15 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <asset:stylesheet src="application.css"/>
     <asset:link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <asset:javascript src="jquery/jquery.js"/>
+    <asset:javascript src="bootstrap/js/bootstrap.js"/>
+    <asset:javascript src="bootstrap-material-design/js/material.js"/>
     <script>
-      // Globals for dates
-      var gr8ConfStart = "${grailsApplication.config.gr8conf.dates.start}";
-      var gr8ConfEnd = "${grailsApplication.config.gr8conf.dates.end}";
-      var gr8ConfYear = "${grailsApplication.config.gr8conf.dates.year}";
+    // Globals for dates
+    var gr8ConfStart = "${grailsApplication.config.gr8conf.dates.start}";
+    var gr8ConfEnd = "${grailsApplication.config.gr8conf.dates.end}";
+    var gr8ConfYear = "${grailsApplication.config.gr8conf.dates.year}";
+    $(function() { $.material.init(); });
     </script>
     <g:layoutHead/>
 </head>

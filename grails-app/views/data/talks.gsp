@@ -16,8 +16,13 @@
         <div class="row">
         <g:set value="${talks.size()}" var="talkCount"/>
         <g:each in="${talks}" var="talk">
-            <div class="talk col-md-6">
-                <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
+            <g:if test="${talkCount == 1}">
+                <div class="talk col-md-12">
+            </g:if>
+            <g:else>
+                <div class="talk col-md-6">
+            </g:else>
+                    <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
                 <div class="tags">
                 <g:each in="${talk.tags}" var="tag">
                     <span class="label label-info">${tag}</span>

@@ -11,5 +11,6 @@
         <div id="calendar"></div>
     </div>
 </section>
+<asset:javascript src="agenda.js"/>
 </body>
 </html>

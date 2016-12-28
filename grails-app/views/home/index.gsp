@@ -112,5 +112,6 @@
     </a>
 </div><!-- /.carousel -->
 
+<asset:javascript src="home.js"/>
 </body>
 </html>

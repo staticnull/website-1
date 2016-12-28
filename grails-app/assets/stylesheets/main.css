@@ -5,3 +5,8 @@ body {
     /*padding-bottom: 3rem;*/
     color: #5a5a5a;
 }
+
+.turbolinks-progress-bar {
+    height: 5px;
+    background-color: #193a46;
+}

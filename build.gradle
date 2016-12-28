@@ -72,6 +72,9 @@ clientDependencies {
         'fullcalendar'('3.1.0')
         'fullcalendar-scheduler'('1.5.0')
     }
+    yarn {
+        'turbolinks'('5.0.0')
+    }
 }
 
 task wrapper(type: Wrapper) {
