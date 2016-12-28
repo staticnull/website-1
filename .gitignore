@@ -22,3 +22,8 @@ Thumbs.db
 .DS_Store
 build/
 grails-app/assets/vendor/*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

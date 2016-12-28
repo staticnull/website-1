@@ -1,0 +1,25 @@
+files:
+  "/etc/security/limits.conf":
+    mode: "00644"
+    owner: "root"
+    group: "root"
+    content: |
+      *         hard    nofile      65536
+      *         soft    nofile      65536
+
+  "/opt/elasticbeanstalk/hooks/appdeploy/post/99_restart_delayed_job.sh":
+    mode: "000755"
+    owner: root
+    group: root
+    content: |
+      #!/usr/bin/env bash
+      echo "
+      if (\$http_x_forwarded_proto = "http") {
+          return 301 https://\$host\$request_uri;
+      }" > /etc/nginx/conf.d/elasticbeanstalk/99_ssl_only.conf
+
+commands:
+  reload_sysctl:
+    command: sysctl -p
+  reload_nginx:
+    command: service nginx reload

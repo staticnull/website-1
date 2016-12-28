@@ -89,8 +89,8 @@ assets {
 
 jar {
     archiveName 'gr8confus-website.jar'
-}
 
-springBoot {
-    executable = true
+    from('src/main/ebextensions') {
+        into('.ebextensions')
+    }
 }
