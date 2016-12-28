@@ -1,0 +1,15 @@
+branch-defaults:
+  master:
+    environment: gr8conf-website-dev
+    group_suffix: null
+deploy:
+  artifact: build/libs/gr8confus-website.jar
+global:
+  application_name: gr8conf-website
+  branch: null
+  default_ec2_keyname: aws-eb-gr8conf-website
+  default_platform: Java 8
+  default_region: us-east-2
+  profile: gr8conf
+  repository: null
+  sc: git
