@@ -56,10 +56,9 @@ class ApiService {
      */
     @Cacheable(value = "calendar")
     List getCalendar() {
-        List data = getData('agenda')
         List jsonMap = []
 
-        data.each { date ->
+        getData('agenda')?.each { date ->
             def agendaDay = date.day
             date.tracks.each { track ->
                 def room = track.name
