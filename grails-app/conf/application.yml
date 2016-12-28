@@ -125,7 +125,7 @@ gr8conf:
         url: http://cfp.gr8conf.org/api2
         confId: 7
     dates:
-        start: 2017-7-26
-        end: 2017-7-28
+        start: 2017-07-26
+        end: 2017-07-28
         year: 2017
         humanRange: July 26-28 # parsing dates is fun and all, but this is easier.
