@@ -20,6 +20,7 @@
 .nb-gradle
 Thumbs.db
 .DS_Store
+.asscache
 build/
 grails-app/assets/vendor/*
 
