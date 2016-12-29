@@ -64,13 +64,20 @@ dependencies {
 
 clientDependencies {
     bower {
-        'fontawesome'('4.7.0')
+        'fontawesome'('4.7.0') {
+            include 'css/**', 'fonts/**'
+        }
         'bootstrap'('v3.3.7')
-        'bootstrap-material-design'('0.5.10')
+        'bootstrap-material-design'('0.5.10', exclude: 'bootstrap-sass')
         'jquery'('3.1.1')
         'jquery.countdown'('2.2.0')
-        'fullcalendar'('3.1.0')
+        'fullcalendar'('3.1.0') {
+            exclude 'locale/**'
+        }
         'fullcalendar-scheduler'('1.5.0')
+        'moment'('2.17.1') {
+            include 'moment.js'
+        }
     }
     yarn {
         'turbolinks'('5.0.0')
