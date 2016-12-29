@@ -84,6 +84,10 @@ clientDependencies {
     }
 }
 
+clean << {
+    delete "${rootDir}/grails-app/assets/vendor/"
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
 }
