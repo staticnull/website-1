@@ -8,7 +8,7 @@
 <section class="page-block">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-12">
                 <h1>Venue</h1>
                 <p class="lead"> GR8Conf US is located at the Univeristy of St. Thomas </p>
             </div>

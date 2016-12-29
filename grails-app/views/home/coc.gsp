@@ -8,6 +8,7 @@
 <section class="page-block">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
             <h1>Code of Conduct</h1>
             <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting cooperation from all participants to help
             ensuring a safe environment for everybody. </p>
@@ -52,6 +53,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </div>
 </section>
 </body>

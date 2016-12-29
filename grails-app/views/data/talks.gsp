@@ -8,7 +8,7 @@
 <section class="page-block">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-12">
                 <h1>Talks</h1>
                 <p class="lead"> Learn from the best and brightest in our community. </p>
             </div>

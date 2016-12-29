@@ -8,7 +8,7 @@
 <section class="page-block">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-12">
                 <h1>Sponsors</h1>
                 <p class="lead">Check out the great companies sponsoring GR8Conf US. </p>
             </div>
