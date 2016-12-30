@@ -1,6 +1,4 @@
-console.log('inturbo');
 $(function () {
-    console.log("jquery incal");
     $('#calendar').fullCalendar({
         schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
         allDaySlot: false,
@@ -27,7 +25,6 @@ $(function () {
         },
         // Do not allow navigation beyond conf dates.
         viewRender: function (view, element) {
-            var now = new Date();
             var startDate = moment(gr8ConfStart);
             var endDate = moment(gr8ConfEnd);
 
@@ -61,7 +58,7 @@ $(function () {
                 .css('width', $("#calendar").width())
                 .css('background-color', "black")
                 .css('border-color', "black");
-            if($('#calendar').fullCalendar( 'clientEvents').length == 0) {
+            if($('#calendar').fullCalendar('clientEvents').length == 0) {
                 $('#calendarHeader').text("Schedules for " + gr8ConfYear + " are not posted yet, check back soon!")
             }
         },
