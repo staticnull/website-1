@@ -39,13 +39,6 @@
 
 <!-- .carousel -->
 <div id="techCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    %{--<ol class="carousel-indicators">--}%
-        %{--<li data-target="#techCarousel" data-slide-to="0" class="active"></li>--}%
-        %{--<li data-target="#techCarousel" data-slide-to="1"></li>--}%
-        %{--<li data-target="#techCarousel" data-slide-to="2"></li>--}%
-        %{--<li data-target="#techCarousel" data-slide-to="3"></li>--}%
-    %{--</ol>--}%
     <div class="carousel-inner" role="listbox">
         <div class="item active groovy-slide slide-bg">
             <div class="container">
