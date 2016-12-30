@@ -10,7 +10,7 @@ cache:
   directories:
   - $HOME/.gradle
 script:
-- ./gradlew clean build test assemble
+- ./gradlew test
 - ./gradlew deployDev
 env:
   global:
