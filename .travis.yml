@@ -1,19 +1,18 @@
 language: java
-
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 os:
-  - linux
-
+- linux
 branches:
   only:
-    - master
-
+  - master
 cache:
   directories:
   - $HOME/.gradle
-
 script:
-  - ./gradlew clean build test assemble
-#  - ./gradlew deployDev
+- ./gradlew clean build test assemble
+- ./gradlew deployDev
+env:
+  global:
+  - secure: A7VYlPDC3F+23wo4yUbTJNB/f6zUlifALmfN6X/m9iwL1k1Zz2PEYfmZvB0Hm8W3r9lP9VX1HuwfTIoN603GQdcj5Y4C0T6Eeps3gDz3/CB1nFATPF4DjA3EV9W+jzOp/8nyJT1n8iH1bDUM1K+Dx7O7rI3a8MPWhEYlB7iJjTI=
+  - secure: KhgY2/ltjW1vVh4nm0NmsHKa5rFRfb5ANHWFh1z9/s5HYTOR7idKOWeJUi1ZuUT19NVfvFJonrP6WRqekeCPoZFZ+1R8navHIWVHxT5Jo72bqpU8O/T0P7C0TiX0Gw98STOCq3guSKpKlfyu33scCUEMu1OTVNlVan9fkX3wVNs=
