@@ -44,6 +44,12 @@
             </div>
             <div class="list-group-separator"></div>
             </g:each>
+            <g:if test="${numSpeakers == 0}">
+                <div class="col-md-12">
+                    <p>No Speakers scheduled for GR8Conf ${grailsApplication.config.gr8conf.dates.year} yet!</p>
+                    <a href="http://cfp.gr8conf.org/" class="btn btn-lg btn-info btn-raised" >Submit your talk today!</a>
+                </div>
+            </g:if>
         </div>
     </div>
 </section>

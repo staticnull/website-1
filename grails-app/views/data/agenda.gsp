@@ -8,6 +8,7 @@
 <br/>
 <section class="page-block">
     <div class="container">
+        <h1 id="calendarHeader" class="text-center"></h1>
         <div id="calendar"></div>
     </div>
 </section>

@@ -61,6 +61,9 @@ $(function () {
                 .css('width', $("#calendar").width())
                 .css('background-color', "black")
                 .css('border-color', "black");
+            if($('#calendar').fullCalendar( 'clientEvents').length == 0) {
+                $('#calendarHeader').text("Schedules for " + gr8ConfYear + " are not posted yet, check back soon!")
+            }
         },
         // If a event has a url property, allow navigation.
         eventClick: function (calEvent, jsEvent, view) {

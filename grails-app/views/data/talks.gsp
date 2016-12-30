@@ -17,10 +17,10 @@
         <g:set value="${talks.size()}" var="talkCount"/>
         <g:each in="${talks}" var="talk">
             <g:if test="${talkCount == 1}">
-                <div class="talk col-md-12">
+                <div class="col-md-12">
             </g:if>
             <g:else>
-                <div class="talk col-md-6">
+                <div class="col-md-6">
             </g:else>
                     <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
                 <div class="tags">
@@ -43,6 +43,12 @@
                 </g:if>
             </div>
         </g:each>
+        <g:if test="${talkCount == 0}">
+            <div class="col-md-12">
+                <p>No Talks scheduled for GR8Conf ${grailsApplication.config.gr8conf.dates.year} yet!</p>
+                <a href="http://cfp.gr8conf.org/" class="btn btn-lg btn-info btn-raised" >Submit your talk today!</a>
+            </div>
+        </g:if>
         </div>
     </div>
 </section>
