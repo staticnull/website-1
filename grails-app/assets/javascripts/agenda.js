@@ -5,7 +5,7 @@ $(function () {
         schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
         allDaySlot: false,
         defaultView: 'agendaDay',
-        defaultDate: '2016-07-27', // gr8ConfStart
+        defaultDate: gr8ConfStart,
         height: 'auto',
         minTime: "08:00:00",
         maxTime: "19:00:00",
@@ -28,8 +28,8 @@ $(function () {
         // Do not allow navigation beyond conf dates.
         viewRender: function (view, element) {
             var now = new Date();
-            var startDate = moment("2016-07-27"); // gr8ConfStart
-            var endDate = moment("2016-07-29"); // gr8ConfEnd
+            var startDate = moment(gr8ConfStart);
+            var endDate = moment(gr8ConfEnd);
 
             if (endDate < view.end) {
                 $("#calendar .fc-next-button").prop("disabled", true);

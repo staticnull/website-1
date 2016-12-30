@@ -123,7 +123,7 @@ endpoints:
 gr8conf:
     cfp:
         url: http://cfp.gr8conf.org/api2
-        confId: 7
+        confId: 11
     dates:
         start: 2017-07-26
         end: 2017-07-28
