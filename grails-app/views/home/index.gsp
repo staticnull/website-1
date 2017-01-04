@@ -10,7 +10,7 @@
         <div class="item active skyline-bg slide-bg">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Welcome to GR8Conf ${grailsApplication.config.gr8conf.dates.year}!</h1>
+                    <h1>Welcome to GR8Conf US ${grailsApplication.config.gr8conf.dates.year}!</h1>
                     <h3>${grailsApplication.config.gr8conf.dates.humanRange}</h3>
                     <h4><div id="the-final-countdown">.</div></h4>
                     <p><a class="btn btn-lg btn-info btn-raised" role="button" href="https://ti.to/gr8conf/gr8conf-${grailsApplication.config.gr8conf.dates.year}"> <span class="fa fa-ticket"></span> Buy Ticket</a></p>
