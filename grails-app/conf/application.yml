@@ -121,6 +121,8 @@ endpoints:
     jmx:
         unique-names: true
 gr8conf:
+    cache:
+        token: placeholder
     cfp:
         url: http://cfp.gr8conf.org/api2
         confId: 11
