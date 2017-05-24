@@ -25,7 +25,7 @@ class ApiService {
     @Cacheable(value = "speakers")
     List getSpeakers(Integer id) {
         List data = getData('speakers')
-        if(id) {
+        if (id) {
             data = [data.find { it.id == id } ?: EMPTY_LIST]
         }
         data
@@ -34,7 +34,7 @@ class ApiService {
     @Cacheable(value = "talks")
     List getTalks(Integer id) {
         List data = getData('talks')
-        if(id) {
+        if (id) {
             data = [data.find { it.id == id } ?: EMPTY_LIST]
         }
         data
@@ -43,7 +43,7 @@ class ApiService {
     @Cacheable(value = "agenda")
     List getAgenda(String day = null) {
         List data = getData('agenda')
-        if(day) {
+        if (day) {
             data = [data.find { it.day == day } ?: EMPTY_LIST]
         }
         data
@@ -56,44 +56,55 @@ class ApiService {
      */
     @Cacheable(value = "calendar")
     List getCalendar() {
-        List jsonMap = []
+        List json = []
 
         getData('agenda')?.each { date ->
+            println "Date: $date"
             def agendaDay = date.day
+            println "AgendaDay: $agendaDay"
             date.tracks.each { track ->
                 def room = track.name
-                if(!track.allColumns) {
-                    track.slots.each {slot->
-                        jsonMap.add([
-                            id: slot.talk.id,
-                            resourceId: room,
-                            start: "${agendaDay}T${slot.start}",
-                            end: "${agendaDay}T${slot.end}",
-                            title: slot.talk.title,
-                            url: "${grailsLinkGenerator.link(controller: "talks")}/${slot.talk.id}"
-                        ])
+                track.slots.each { slot ->
+                    List speaker = slot.speakers
+
+                    Map jsonMap = [:]
+                    jsonMap.start = "${agendaDay}T${slot.start}"
+                    jsonMap.end = "${agendaDay}T${slot.end}"
+
+                    if (!room || room == "Keynote") {
+                        jsonMap.resourceId = "Schulze Hall Auditorium"
+                        jsonMap.className = "keynote"
+                    } else {
+                        jsonMap.resourceId = room
                     }
-                } else {
-                    track.slots.each { slot ->
-                        jsonMap.add([
-                            id: "${slot.name}",
-                            resourceId: "Schulze Hall Auditorium",
-                            start: "${agendaDay}T${slot.start}",
-                            end: "${agendaDay}T${slot.end}",
-                            title: slot.name,
-                            className: "allColumns"
-                        ])
+
+                    if (room == "Object Partners HQ") {
+                        jsonMap.resourceId = "Schulze Hall Auditorium"
+                        jsonMap.className = "allColumns"
+
                     }
+
+                    if (!track.breaks) {
+                        jsonMap.id = slot.talk.id
+                        jsonMap.title = "${slot.talk.title} - ${slot?.speakers[0]?.name}"
+                        jsonMap.url = "${grailsLinkGenerator.link(controller: "talks")}/${slot.talk.id}"
+                    } else {
+                        jsonMap.id = "${slot.name}"
+                        jsonMap.resourceId = "Schulze Hall Auditorium"
+                        jsonMap.title = slot.name
+                        jsonMap.className = track.allColumns ? "allColumns" : ""
+                    }
+                    json.add(jsonMap)
                 }
             }
         }
-        jsonMap
+        json
     }
 
     @Cacheable(value = "tags")
     List getTags(String tag) {
         List data = getData('tags')
-        if(tag) {
+        if (tag) {
             data = [data.find { it.tag == tag } ?: EMPTY_LIST]
         }
         data
