@@ -6,7 +6,7 @@ $(function () {
         defaultDate: gr8ConfStart,
         height: 'auto',
         minTime: "08:00:00",
-        maxTime: "19:00:00",
+        maxTime: "22:00:00",
         allDay: false,
         editable: false,
         selectable: false,
@@ -43,9 +43,9 @@ $(function () {
         },
         resources: [
             {id: 'Schulze Hall Auditorium', title: 'Schulze Hall Auditorium'},
-            {id: 'Schultze Hall 127', title: 'Schultze Hall 127', eventColor: 'green'},
-            {id: 'Law School 235', title: 'Law School 235', eventColor: 'orange'},
-            {id: 'Law School 238', title: 'Law School 238', eventColor: 'red'}
+            {id: 'Schultze Hall 127', title: 'Schultze Hall 127'},
+            {id: 'Law School 235', title: 'Law School 235'},
+            {id: 'Law School 238', title: 'Law School 238'}
         ],
         events: {
             url: "/data/fullCalendar.json",
@@ -56,8 +56,13 @@ $(function () {
             // Hax
             $(".allColumns")
                 .css('width', $("#calendar").width())
-                .css('background-color', "black")
-                .css('border-color', "black");
+                .css('background-color', "#7e7e7e")
+                .css('border-color', "#7e7e7e")
+                .css('color', "white");
+            $(".keynote")
+                .css('width', $("#calendar").width())
+                .css('background-color', "#D3D3D3")
+                .css('border-color', "#D3D3D3;");
             if($('#calendar').fullCalendar('clientEvents').length == 0) {
                 $('#calendarHeader').text("Schedules for " + gr8ConfYear + " are not posted yet, check back soon!")
             }

@@ -3,10 +3,30 @@ a {
 }
 body {
     /*padding-bottom: 3rem;*/
-    color: #5a5a5a;
+    color: #333333;
 }
 
 .turbolinks-progress-bar {
     height: 5px;
     background-color: #193a46;
+}
+
+.fc-time-grid .fc-slats td {
+    height: 3em;
+}
+
+.fc-event {
+    background-color: #D3D3D3;
+    border: 1px solid #D3D3D3;
+    color: #333333;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.list-group .list-group-item .row-picture {
+    display: inline;
+}
+
+img {
+    max-height: 150px;
 }
