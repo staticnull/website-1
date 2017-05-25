@@ -1,7 +1,10 @@
 package us.gr8conf.website
 
+import grails.core.GrailsApplication
+
 class DataController {
     ApiService apiService
+    GrailsApplication grailsApplication
 
     def speakers(Integer id) {
         List speakers = apiService.getSpeakers(id)
@@ -15,7 +18,9 @@ class DataController {
 
     def agenda(String day) {
         List agenda = apiService.getAgenda(day)
-        respond agenda, [model: [agenda: agenda]]
+        String startDate = grailsApplication.config.gr8conf.dates.start
+
+        respond agenda, [model: [agenda: agenda, startDate: startDate]]
     }
 
     def fullCalendar() {

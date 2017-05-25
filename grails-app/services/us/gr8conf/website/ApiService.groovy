@@ -59,9 +59,7 @@ class ApiService {
         List json = []
 
         getData('agenda')?.each { date ->
-            println "Date: $date"
             def agendaDay = date.day
-            println "AgendaDay: $agendaDay"
             date.tracks.each { track ->
                 def room = track.name
                 track.slots.each { slot ->

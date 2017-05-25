@@ -22,10 +22,6 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <a href="https://objectpartners.com/"> <asset:image class="img-responsive center-block" src="sponsors/objectpartners.png"/> </a>
                 <div>
                     <br/>
@@ -38,12 +34,12 @@
         <br/>
         <div class="row">
             <div class="col-md-6">
-                <a href="https://github.com/Netflix"> <asset:image class="img-responsive center-block" src="sponsors/netflix.jpg"/> </a>
+                <a href="https://github.com/Netflix"> <asset:image class="img-responsive center-block" src="sponsors/netflix.png"/> </a>
                 <div>
                 </div>
             </div>
             <div class="col-md-6">
-                <a href="http://google.com"> <asset:image class="img-responsive center-block" src="sponsors/google.jpg"/> </a>
+                <a href="http://google.com"> <asset:image class="img-responsive center-block" src="sponsors/google-logo.png"/> </a>
                 <div>
                 </div>
             </div>

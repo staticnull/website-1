@@ -26,3 +26,7 @@ body {
 .list-group .list-group-item .row-picture {
     display: inline;
 }
+
+img {
+    max-height: 150px;
+}
