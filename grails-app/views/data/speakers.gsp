@@ -28,6 +28,15 @@
                     <g:if test="${speaker?.twitter}">
                         <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}">@${speaker.twitter}</a>
                     </g:if>
+                    <p>${speaker.company}</p>
+                    <p>${raw(speaker.bio)}</p>
+
+                    <h3>Talks</h3>
+                    <ul>
+                        <g:each in="${speaker.talks}" var="talk">
+                            <li><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}">${talk.title}</a></li>
+                        </g:each>
+                    </ul>
                     </p>
                 </div>
                 <g:if test="${numSpeakers == 1}">

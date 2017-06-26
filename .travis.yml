@@ -10,8 +10,7 @@ cache:
   directories:
   - $HOME/.gradle
 script:
-- ./gradlew test
-- ./gradlew deployProd
+- ./build.sh
 env:
   global:
   - secure: A7VYlPDC3F+23wo4yUbTJNB/f6zUlifALmfN6X/m9iwL1k1Zz2PEYfmZvB0Hm8W3r9lP9VX1HuwfTIoN603GQdcj5Y4C0T6Eeps3gDz3/CB1nFATPF4DjA3EV9W+jzOp/8nyJT1n8iH1bDUM1K+Dx7O7rI3a8MPWhEYlB7iJjTI=
