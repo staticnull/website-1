@@ -3,7 +3,7 @@ $(function () {
         schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
         allDaySlot: false,
         defaultView: 'agendaDay',
-        defaultDate: gr8ConfStart,
+        defaultDate: moment.utc(gr8ConfStart),
         height: 'auto',
         minTime: "08:00:00",
         maxTime: "22:00:00",
@@ -25,21 +25,10 @@ $(function () {
         },
         // Do not allow navigation beyond conf dates.
         viewRender: function (view, element) {
-            var startDate = moment(gr8ConfStart);
-            var endDate = moment(gr8ConfEnd);
-
-            if (endDate < view.end) {
-                $("#calendar .fc-next-button").prop("disabled", true);
-                return false;
-            } else {
-                $("#calendar .fc-next-button").prop("disabled", false);
-            }
-            if (view.start < startDate) {
-                $("#calendar .fc-prev-button").prop("disabled", true);
-                return false;
-            } else {
-                $("#calendar .fc-prev-button").prop("disabled", false);
-            }
+            var startDate = moment.utc(gr8ConfStart);
+            var endDate = moment.utc(gr8ConfEnd);
+            $("#calendar .fc-next-button").prop("disabled", endDate < view.end);
+            $("#calendar .fc-prev-button").prop("disabled", view.start <= startDate);
         },
         resources: [
             {id: 'Schulze Hall Auditorium', title: 'Schulze Hall Auditorium'},

@@ -29,3 +29,4 @@ grails-app/assets/vendor/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 .gradletasknamecache
+atlassian-ide-plugin.xml
