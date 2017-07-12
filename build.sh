@@ -1,3 +1,7 @@
 #!/bin/bash -x 
 ./gradlew test
-[ "$TRAVIS_BRANCH" = "master" ] && ./gradlew deployProd
+if [ "$TRAVIS_PULL_REQUEST" = "false" ] ; then
+  ./gradlew deployProd
+else
+  echo "Skipping deploy..."
+fi
