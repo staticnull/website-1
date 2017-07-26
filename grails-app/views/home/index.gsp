@@ -39,6 +39,12 @@
                 <p><p>Attendees will leave the experience with numerous sample projects, which represent all of the ideas covered during the course. The experience involves lecture, examples, and lab exercises all led by Grails co-founder, Jeff Scott Brown.</p>
                 <p><a class="btn btn-lg btn-info btn-raised" role="button" target="_blank" href="https://objectcomputing.com/training/next-level-grails-in-two-days-gr8confus/">  Get More Information Here</a></p>
             </div>
+            <div class="col-lg-12">
+                <h3>Grails 3 Book</h3>
+                <p><p> The first book dedicated to Grails 3. You will learn the concepts behind building Grails applications. Real, up-to-date code examples are provided so you can easily follow along.</p>
+                <asset:image class="img-responsive center-block" src="g3.png"/>
+                <p><a class="btn btn-lg btn-info btn-raised" role="button" target="_blank" href="https://www.grails3book.com">Get The Book Here</a></p>
+            </div>
         </div>
     </div>
 </section>
