@@ -41,9 +41,6 @@
             <div class="col-md-6">
                 <a href="https://www.smartthings.com/"> <asset:image class="img-responsive center-block" src="sponsors/smartthings.png"/> </a>
                 <div>
-                    <br/>
-                    <p>Over the past 20 years, we have an impressive history of successful enterprise software development projects using the best software developers with the best tools and technologies.</p>
-                    <p>Better developers, better software</p>
                 </div>
             </div>
         </div>
