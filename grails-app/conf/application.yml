@@ -125,9 +125,9 @@ gr8conf:
         token: placeholder
     cfp:
         url: http://cfp.gr8conf.org/api2
-        confId: 11
+        confId: 13
     dates:
-        start: 20170726
-        end: 20170728
-        year: 2017
-        humanRange: July 26-28 # parsing dates is fun and all, but this is easier.
+        start: 20180725
+        end: 20180727
+        year: 2018
+        humanRange: July 25-27 # parsing dates is fun and all, but this is easier.
