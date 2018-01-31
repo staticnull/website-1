@@ -1,9 +1,9 @@
-//= require turbolinks/turbolinks.js
-//= require jquery.countdown/jquery.countdown.js
-//= require bootstrap-material-design/js/ripples.js
+//= require turbolinks/dist/turbolinks.js
+//= require jquery-countdown/dist/jquery.countdown.js
+//= require bootstrap-material-design/dist/js/ripples.js
 //= require moment/moment.js
-//= require fullcalendar/fullcalendar.js
-//= require fullcalendar-scheduler/scheduler.js
+//= require fullcalendar/dist/fullcalendar.js
+//= require fullcalendar-scheduler/dist/scheduler.js
 //= require_self
 
 document.addEventListener("turbolinks:load", function() {

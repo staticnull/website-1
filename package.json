@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "gr8confus",
+  "main": "index.js",
+  "repository": "git@github.com:GR8conf/website.git",
+  "author": "Eric Helgeson <eric@agileorbit.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-material-design": "0.5.10",
+    "fullcalendar": "3.1.0",
+    "fullcalendar-scheduler": "1.5.0",
+    "jquery": "^3.2.1",
+    "jquery-countdown": "^2.2.0",
+    "moment": "^2.20.1",
+    "turbolinks": "^5.1.1"
+  }
+}
