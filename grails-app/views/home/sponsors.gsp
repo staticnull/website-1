@@ -33,43 +33,7 @@
         <br/>
         <br/>
         <div class="row">
-            <div class="col-md-6">
-                <a href="https://www.target.com/"> <asset:image class="img-responsive center-block" src="sponsors/target.jpg"/> </a>
-                <div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <a href="https://www.smartthings.com/"> <asset:image class="img-responsive center-block" src="sponsors/smartthings.png"/> </a>
-                <div>
-                </div>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="https://github.com/Netflix"> <asset:image class="img-responsive center-block" src="sponsors/netflix.png"/> </a>
-                <div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <a href="http://google.com"> <asset:image class="img-responsive center-block" src="sponsors/google-logo.png"/> </a>
-                <div>
-                </div>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <div class="row">
             <br/>
-
-            <div class="col-md-6">
-                <a href="https://gr8ladies.org"> <asset:image class="img-responsive center-block" src="sponsors/gr8ladies.png"/> </a>
-                <br/>
-                <div>
-                    <p>Gr8Ladies is an organization for the support of women in the Gr8 (Groovy, Grails, Gradle, Griffon, etc) community. Although our mission is to bring more women into the Gr8 community, our events are always open to anyone of any gender! We could never achieve our mission without allies. We strive to create a warm welcoming environment for individuals at every stage of their programming careers.</p>
-                </div>
-            </div>
             <div class="col-md-6">
                 <a href="http://agileorbit.com"> <asset:image class="img-responsive center-block" src="sponsors/Agile_Orbit_Logos_Color.png"/> </a>
                 <div>
