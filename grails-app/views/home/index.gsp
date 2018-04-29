@@ -34,9 +34,8 @@
                 <p><a class="btn btn-info" href="${createLink(controller: "data", action: "talks")}" role="button">Talks &raquo;</a></p>
             </div>
             <div class="col-lg-12">
-                <h3>Special Training Offer for GR8Conf US attendees</h3>
-                <p><p> This 2-day, hands-on intensive course covers many powerful features offered by the Grails framework to help developers easily build more flexible applications while decreasing the complexity level of the code.</p>
-                <p><p>Attendees will leave the experience with numerous sample projects, which represent all of the ideas covered during the course. The experience involves lecture, examples, and lab exercises all led by Grails co-founder, Jeff Scott Brown.</p>
+                <h3>MICRONAUT DEEP DIVE AT GR8CONF US 2018!</h3>
+                <p><p> This 2-day, hands-on workshop takes place prior to GR8Conf US. Enroll now and be among the first to learn the Micronaut framework! Through lectures, real-world examples, and lab exercises, developers will be armed with everything they need to immediately start building microservice applications using Micronaut. </p>
                 <p><a class="btn btn-lg btn-info btn-raised" role="button" target="_blank" href="https://objectcomputing.com/training/next-level-grails-in-two-days-gr8confus/">  Get More Information Here</a></p>
             </div>
             <div class="col-lg-12">
