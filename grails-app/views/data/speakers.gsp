@@ -39,17 +39,6 @@
                     </ul>
                     </p>
                 </div>
-                <g:if test="${numSpeakers == 1}">
-                    <p>${speaker.company}</p>
-                    <p>${raw(speaker.bio)}</p>
-
-                    <h3>Talks</h3>
-                    <ul>
-                        <g:each in="${speaker.talks}" var="talk">
-                            <li><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}">${talk.title}</a></li>
-                        </g:each>
-                    </ul>
-                </g:if>
             </div>
             <div class="list-group-separator"></div>
             </g:each>
