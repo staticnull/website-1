@@ -17,6 +17,7 @@ files:
       if (\$http_x_forwarded_proto = "http") {
           return 301 https://\$host\$request_uri;
       }" > /etc/nginx/conf.d/elasticbeanstalk/99_ssl_only.conf
+      service nginx restart
 
 commands:
   reload_sysctl:
