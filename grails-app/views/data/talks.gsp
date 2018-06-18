@@ -38,8 +38,10 @@
                         <li><a href="${createLink(controller: "data", action: "speakers", params: [id: speaker.id])}">${speaker.name}</a></li>
                     </g:each>
                     </ul>
-                    <p>${talk.slot.duration} min</p>
-                    <div class="slotTime" data-start="${talk.slot.start}" data-end="${talk.slot.end}"></div>
+                    <g:if test="${talk?.slot?.duration}">
+                        <p>${talk.slot.duration} min</p>
+                    </g:if>
+                    <div class="slotTime" data-start="${talk?.slot?.start}" data-end="${talk?.slot?.end}"></div>
                 </g:if>
             </div>
         </g:each>
@@ -49,6 +51,7 @@
                 <a href="http://cfp.gr8conf.org/" class="btn btn-lg btn-info btn-raised" >Submit your talk today!</a>
             </div>
         </g:if>
+        </div>
         </div>
     </div>
 </section>

@@ -18,7 +18,7 @@
                 <asset:image class="img-responsive" src="hotel-double-tree.jpg"/>
             </div>
             <div class="row">
-                <p><a href="https://secure3.hilton.com/en_US/dt/reservation/book.htm?inputModule=HOTEL&ctyhocn=MSPLSDT&spec_plan=CDTGRA&arrival=20170725&departure=20170729&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" class="btn btn-lg btn-raised btn-info pull-right" role="button">Book Hotel </a></p>
+                <p><a href="https://secure3.hilton.com/en_US/dt/reservation/book.htm?inputModule=HOTEL&ctyhocn=MSPLSDT&spec_plan=CDTGRC&arrival=20180723&departure=20180728&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" class="btn btn-lg btn-raised btn-info pull-right" role="button">Book Hotel </a></p>
                 <div class="vcard">
                     <span style="font-weight: bold">DoubleTree Suites by Hilton Hotel Minneapolis</span> <br/>
                     <span>1101 LaSalle Avenue, Minneapolis, MN 55403</span> <br/>
