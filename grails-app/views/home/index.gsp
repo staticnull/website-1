@@ -36,13 +36,13 @@
             <div class="col-lg-12">
                 <h3>MICRONAUT DEEP DIVE AT GR8CONF US 2018!</h3>
                 <p><p> This 2-day, hands-on workshop takes place prior to GR8Conf US. Enroll now and be among the first to learn the Micronaut framework! Through lectures, real-world examples, and lab exercises, developers will be armed with everything they need to immediately start building microservice applications using Micronaut. </p>
-                <p><a class="btn btn-lg btn-info btn-raised" role="button" target="_blank" href="https://objectcomputing.com/training/next-level-grails-in-two-days-gr8confus/">  Get More Information Here</a></p>
+                <p><a target="_blank" class="btn btn-lg btn-info btn-raised" role="button" href="https://objectcomputing.com/training/next-level-grails-in-two-days-gr8confus/">More Information</a></p>
             </div>
             <div class="col-lg-12">
                 <h3>Grails 3 Book</h3>
                 <p><p> The first book dedicated to Grails 3. You will learn the concepts behind building Grails applications. Real, up-to-date code examples are provided so you can easily follow along.</p>
                 <asset:image class="img-responsive center-block" src="g3.png"/>
-                <p><a class="btn btn-lg btn-info btn-raised" role="button" target="_blank" href="https://www.grails3book.com">Get The Book Here</a></p>
+                <p><a target="_blank" class="btn btn-lg btn-info btn-raised" role="button" href="https://www.grails3book.com">Buy The Book</a></p>
             </div>
         </div>
     </div>
@@ -56,7 +56,7 @@
                 <div class="carousel-caption">
                     <h1>Apache Groovy</h1>
                     <p>Powerful dynamic JVM language</p>
-                    <p><a class="btn btn-lg btn-info btn-raised" href="http://groovy-lang.org" role="button">groovy-lang.org</a></p>
+                    <p><a target="_blank" class="btn btn-lg btn-info btn-raised" href="http://groovy-lang.org" role="button">groovy-lang.org</a></p>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                 <div class="carousel-caption">
                     <h1>Grails</h1>
                     <p>A powerful Apache Groovy-based web application framework for the JVM built on top of Spring Boot</p>
-                    <p><a class="btn btn-lg btn-raised" href="https://grails.org" role="button">grails.org</a></p>
+                    <p><a target="_blank" class="btn btn-lg btn-raised" href="https://grails.org" role="button">grails.org</a></p>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                 <div class="carousel-caption">
                     <h1>Join the conversation</h1>
                     <p>Chat with GR8Conf attendees in the Groovy Community Slack</p>
-                    <p><a class="btn  btn-raised" href="https://groovycommunity.com" role="button">Join Slack</a></p>
+                    <p><a target="_blank" class="btn btn-raised" href="https://groovycommunity.com" role="button">Join Slack</a></p>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
                 <div class="carousel-caption">
                     <h1>Ratpack</h1>
                     <p>Lean & powerful HTTP apps</p>
-                    <p><a class="btn btn-raised" href="https://ratpack.io" role="button">ratpack.io</a></p>
+                    <p><a target="_blank" class="btn btn-raised" href="https://ratpack.io" role="button">ratpack.io</a></p>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
                 <div class="carousel-caption">
                     <h1>Gradle</h1>
                     <p>Build tool for the JVM</p>
-                    <p><a class="btn btn-raised" href="https://gradle.org" role="button">gradle.org</a></p>
+                    <p><a target="_blank" class="btn btn-raised" href="https://gradle.org" role="button">gradle.org</a></p>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 <div class="carousel-caption">
                     <h1>Spock</h1>
                     <p>The enterprise ready specification framework</p>
-                    <p><a class="btn btn-raised" href="http://spockframework.org/" role="button">spockframework.org</a></p>
+                    <p><a target="_blank" class="btn btn-raised" href="http://spockframework.org/" role="button">spockframework.org</a></p>
                 </div>
             </div>
         </div>
