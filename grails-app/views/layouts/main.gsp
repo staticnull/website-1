@@ -15,7 +15,6 @@
     <asset:javascript src="bootstrap/dist/js/bootstrap.js"/>
     <asset:javascript src="bootstrap-material-design/dist/js/material.js"/>
     <script>
-    // Globals for dates
     var gr8ConfStart = "${grailsApplication.config.gr8conf.dates.start}";
     var gr8ConfEnd = "${grailsApplication.config.gr8conf.dates.end}";
     var gr8ConfYear = "${grailsApplication.config.gr8conf.dates.year}";
@@ -35,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">GR8Conf US</a>
+                <a class="navbar-brand" href="/"><i class="fa fa-star-o"></i> GR8Conf US</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -71,7 +70,6 @@
 <div class="footer-distributed" id="footer">
     <div class="container">
     <div class="footer-right">
-        %{--<a target="_blank" href="https://facebook.com/GR8ConfUS"><i class="fa fa-facebook"></i></a>--}%
         <a target="_blank" href="https://twitter.com/gr8confus"><i class="fa fa-twitter"></i></a>
         <a target="_blank" href="mailto:contact@gr8conf.us"><i class="fa fa-envelope"></i></a>
         <a target="_blank" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1132982690&mt=8" target="_blank"><i class="fa fa-apple"></i></a>
@@ -82,7 +80,7 @@
         <p>
             <a target="_blank" href="http://prettygoodconferences.org"><span style="color:white;">Pretty Good Conferences</span></a>
         </p>
-        <p>Gr8Conf US &copy; ${Calendar.getInstance().get(Calendar.YEAR)}</p>
+        <p>GR8Conf US &copy; ${Calendar.getInstance().get(Calendar.YEAR)}</p>
     </div>
     </div>
 </div>

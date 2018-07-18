@@ -32,7 +32,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <a target="_blank" href="http://agileorbit.com"><asset:image class="img-responsive center-block" src="sponsors/Agile_Orbit_Logos_Color.png"/></a>
+                <a target="_blank" href="http://agileorbit.com"><asset:image class="img-responsive center-block" src="sponsors/agileorbit.png"/></a>
                 <div>
                     <p>Agile Orbit is a technology consulting firm specializing in enterprise architecture, web development, mobile development and infrastructure automation.</p>
                     <p>We bring web and mobile technology to life using innovative and cost-effective solutions. We architect, develop and deliver software solutions for our customers using agile development best practices and coach teams on integrating continuous delivery into their projects.</p>

@@ -26,23 +26,23 @@
             <div class="col-lg-12">
                 <h3>GR8 Technology</h3>
                 <p>Apache Groovy, Grails and the related technologies have seen astounding growth in interest and adoption the past few years, and with good reason. To spread the word even more we have created GR8Conf.</p>
-                <p><a class="btn btn-info" href="${createLink(controller: "data", action: "speakers")}" role="button">Speakers &raquo;</a></p>
+                <p><a class="btn btn-lg btn-info" href="${createLink(controller: "data", action: "speakers")}" role="button">Speakers &raquo;</a></p>
             </div>
             <div class="col-lg-12">
                 <h3>GR8 Talks</h3>
-                <p><p> We have in-depth talks covering all major technologies in the Apache Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers in the Groovy Community.</p>
-                <p><a class="btn btn-info" href="${createLink(controller: "data", action: "talks")}" role="button">Talks &raquo;</a></p>
+                <p>We have in-depth talks covering all major technologies in the Apache Groovy ecosystem. All talks are performed by the brightest minds and core developers in their fields. Last but not least, the conference is run by developers and volunteers in the Groovy Community.</p>
+                <p><a class="btn btn-lg btn-info" href="${createLink(controller: "data", action: "talks")}" role="button">Talks &raquo;</a></p>
             </div>
             <div class="col-lg-12">
                 <h3>MICRONAUT DEEP DIVE AT GR8CONF US 2018!</h3>
-                <p><p> This 2-day, hands-on workshop takes place prior to GR8Conf US. Enroll now and be among the first to learn the Micronaut framework! Through lectures, real-world examples, and lab exercises, developers will be armed with everything they need to immediately start building microservice applications using Micronaut. </p>
+                <p>This 2-day, hands-on workshop takes place prior to GR8Conf US. Enroll now and be among the first to learn the Micronaut framework! Through lectures, real-world examples, and lab exercises, developers will be armed with everything they need to immediately start building microservice applications using Micronaut.</p>
                 <p><a target="_blank" class="btn btn-lg btn-info btn-raised" role="button" href="https://objectcomputing.com/training/next-level-grails-in-two-days-gr8confus/">More Information</a></p>
             </div>
             <div class="col-lg-12">
                 <h3>Grails 3 Book</h3>
-                <p><p> The first book dedicated to Grails 3. You will learn the concepts behind building Grails applications. Real, up-to-date code examples are provided so you can easily follow along.</p>
+                <p>The first book dedicated to Grails 3. You will learn the concepts behind building Grails applications. Real, up-to-date code examples are provided so you can easily follow along.</p>
                 <asset:image class="img-responsive center-block" src="g3.png"/>
-                <p><a target="_blank" class="btn btn-lg btn-info btn-raised" role="button" href="https://www.grails3book.com">Buy The Book</a></p>
+                <p><a target="_blank" class="btn btn-lg btn-info btn-raised" role="button" href="https://www.grails3book.com"><i class="fa fa-book"></i> Buy The Book</a></p>
             </div>
         </div>
     </div>
@@ -101,7 +101,7 @@
                 <div class="carousel-caption">
                     <h1>Spock</h1>
                     <p>The enterprise ready specification framework</p>
-                    <p><a target="_blank" class="btn btn-raised" href="http://spockframework.org/" role="button">spockframework.org</a></p>
+                    <p><a target="_blank" class="btn btn-raised" href="http://spockframework.org" role="button">spockframework.org</a></p>
                 </div>
             </div>
         </div>

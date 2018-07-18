@@ -11,7 +11,7 @@ document.addEventListener("turbolinks:load", function() {
                 $(this).html(event.strftime('%w weeks %-d days %-H:%M:%S'));
             });
         } else if(now >= gr8ConfStartDate && now <= gr8ConfEndDate) {
-            countDownDiv.html("Gr8Conf is going on right now!");
+            countDownDiv.html("GR8Conf is going on right now!");
         } else {
             countDownDiv.html("See you next year!");
         }

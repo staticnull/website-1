@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>Talks</h1>
-                <p class="lead"> Learn from the best and brightest in our community. </p>
+                <p class="lead">Learn from the best and brightest in our community.</p>
             </div>
         </div>
         <div class="row">
@@ -22,12 +22,12 @@
             <g:else>
                 <div class="col-md-6">
             </g:else>
-                    <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
-                <div class="tags">
-                <g:each in="${talk.tags}" var="tag">
-                    <span class="label label-info">${tag}</span>
-                </g:each>
-                </div>
+                <p><a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}"> ${talk.title}</a>
+                    <div class="tags">
+                    <g:each in="${talk.tags}" var="tag">
+                        <span class="label label-info">${tag}</span>
+                    </g:each>
+                    </div>
                 </p>
                 <g:if test="${talkCount == 1}">
                     <p>${talk.level}</p>
@@ -43,7 +43,7 @@
                     </g:if>
                     <div class="slotTime" data-start="${talk?.slot?.start}" data-end="${talk?.slot?.end}"></div>
                 </g:if>
-            </div>
+                </div>
         </g:each>
         <g:if test="${talkCount == 0}">
             <div class="col-md-12">
@@ -51,7 +51,6 @@
                 <a target="_blank" href="http://cfp.gr8conf.org" class="btn btn-lg btn-info btn-raised">Submit your talk today!</a>
             </div>
         </g:if>
-        </div>
         </div>
     </div>
 </section>

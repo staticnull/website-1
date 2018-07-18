@@ -10,7 +10,6 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>Speakers</h1>
-                %{--<p class="lead">Learn from the best and brightest of our community.</p>--}%
             </div>
         </div>
 

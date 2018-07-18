@@ -8,7 +8,7 @@
     background-position:center;
 }
 .skyline-bg {
-    background-image: url('minneapolis-skyline.7c968493.jpg');
+    background-image: url('minneapolis-skyline.jpg');
 }
 .groovy-slide {
     background-image: url('groovy-logo-white.svg');
@@ -22,21 +22,21 @@
     background-color: #79b94c;
 }
 .slack-slide {
-    background-image: url('Slack_Monochrome_White.svg');
+    background-image: url('slack-white.svg');
     background-color: #78d4b6;
 }
 .slack-slide > .container > .carousel-caption > p > a {
     background-color: #78d4b6;
 }
 .ratpack-slide {
-    background-image: url('martini-a40fa54e8fda7512f8131d59f031b9a3.svg');
+    background-image: url('ratpack-martini.svg');
     background-color: #fdc329;
 }
 .ratpack-slide > .container > .carousel-caption > p > a {
     background-color: #fdc329;
 }
 .gradle-slide {
-    background-image: url('gradle-1.svg');
+    background-image: url('gradle.svg');
     background-color: lightgray;
 }
 .gradle-slide > .container > .carousel-caption > p > a {
