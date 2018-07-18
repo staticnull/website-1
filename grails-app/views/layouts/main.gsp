@@ -69,11 +69,13 @@
 </div>
 <div class="footer-distributed" id="footer">
     <div class="container">
+
     <div class="footer-right">
         <a target="_blank" href="https://twitter.com/gr8confus"><i class="fa fa-twitter"></i></a>
         <a target="_blank" href="mailto:contact@gr8conf.us"><i class="fa fa-envelope"></i></a>
-        <a target="_blank" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1132982690&mt=8" target="_blank"><i class="fa fa-apple"></i></a>
-        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ninerhinos.groovyconf" target="_blank"><i class="fa fa-android"></i></a>
+        <a target="_blank" href="http://prettygoodconferences.org"><i class="fa fa-link"></i></a>
+        %{--<a target="_blank" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1132982690&mt=8" target="_blank"><i class="fa fa-apple"></i></a>--}%
+        %{--<a target="_blank" href="https://play.google.com/store/apps/details?id=com.ninerhinos.groovyconf" target="_blank"><i class="fa fa-android"></i></a>--}%
     </div>
 
     <div class="footer-left">

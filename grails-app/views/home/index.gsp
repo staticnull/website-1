@@ -41,7 +41,7 @@
             <div class="col-lg-12">
                 <h3>Grails 3 Book</h3>
                 <p>The first book dedicated to Grails 3. You will learn the concepts behind building Grails applications. Real, up-to-date code examples are provided so you can easily follow along.</p>
-                <asset:image class="img-responsive center-block" src="g3.png"/>
+                <a target="_blank" href="https://www.grails3book.com"><asset:image class="img-responsive center-block" src="g3.png"/></a>
                 <p><a target="_blank" class="btn btn-lg btn-info btn-raised" role="button" href="https://www.grails3book.com"><i class="fa fa-book"></i> Buy The Book</a></p>
             </div>
         </div>
