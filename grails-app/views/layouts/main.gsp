@@ -71,16 +71,16 @@
 <div class="footer-distributed" id="footer">
     <div class="container">
     <div class="footer-right">
-        %{--<a href="https://facebook.com/GR8ConfUS"><i class="fa fa-facebook"></i></a>--}%
-        <a href="https://twitter.com/gr8confus"><i class="fa fa-twitter"></i></a>
-        <a href="mailto:contact@gr8conf.us"><i class="fa fa-envelope"></i></a>
-        <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1132982690&mt=8" target="_blank"><i class="fa fa-apple"></i></a>
-        <a href="https://play.google.com/store/apps/details?id=com.ninerhinos.groovyconf" target="_blank"><i class="fa fa-android"></i></a>
+        %{--<a target="_blank" href="https://facebook.com/GR8ConfUS"><i class="fa fa-facebook"></i></a>--}%
+        <a target="_blank" href="https://twitter.com/gr8confus"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="mailto:contact@gr8conf.us"><i class="fa fa-envelope"></i></a>
+        <a target="_blank" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1132982690&mt=8" target="_blank"><i class="fa fa-apple"></i></a>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ninerhinos.groovyconf" target="_blank"><i class="fa fa-android"></i></a>
     </div>
 
     <div class="footer-left">
         <p>
-            <a href="http://prettygoodconferences.org/"><span style="color:white;">Pretty Good Conferences</span> </a>
+            <a target="_blank" href="http://prettygoodconferences.org"><span style="color:white;">Pretty Good Conferences</span></a>
         </p>
         <p>Gr8Conf US &copy; ${Calendar.getInstance().get(Calendar.YEAR)}</p>
     </div>
