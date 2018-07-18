@@ -21,31 +21,33 @@
             </mapclick>
         </div>
         <br/>
-        <div class="row row-content">
+        <div class="row">
             <div class="col-sm-4">
-                <asset:image class="img-responsive" src="venue/schulze-hall.f998c1a3.jpg"/>
+                <asset:image class="img-responsive" src="venue/schulze-hall.jpg"/>
                 <p class="vcard"> <a target="_blank" href="http://www.stthomas.edu/business/visitors/campuses" target="_blank">University of St. Thomas</a> - Schulze Hall<br/> 46 S 11th St Minneapolis, MN 55403<br/> [<a target="_blank" href="https://www.google.com/maps/place/Schulze+Hall/@44.974123,-93.2798526,17z/data=!3m1!4b1!4m5!3m4!1s0x52b332944d7d30f9:0x169d5a902717f38e!8m2!3d44.974123!4d-93.2776639">Directions</a>]
                 [<a target="_blank" href="https://www.google.com/maps/search/parking/@44.9741229,-93.2798526,17z/data=!3m1!4b1!4m8!2m7!3m6!1sparking!2sSchulze+Hall,+46+S+11th+St,+Minneapolis,+MN+55403!3s0x52b332944d7d30f9:0x169d5a902717f38e!4m2!1d-93.2776639!2d44.974123">Parking</a>]
-                [<a href="${createLink(controller:"home", action: "hotel")}">Hotel</a>]
             </div>
             <div class="col-sm-4">
-                <a target="_blank" href="http://bit.ly/29pwCkn"><asset:image class="img-responsive" src="venue/preview-sh-floor-1.6ca2eac6.png"/></a> <a target="_blank" href="http://bit.ly/29pwCkn">Schulze Hall Floor Plan</a>
+                <a target="_blank" href="${assetPath(src: 'venue/schulze-hall-location.png')}"><asset:image class="img-responsive" src="venue/preview-schulze-hall-street.png"/></a>
+                <a target="_blank" href="${assetPath(src: 'venue/schulze-hall-location.png')}">Schulze Hall Street View</a><br/>
             </div>
             <div class="col-sm-4">
-                <a target="_blank" href="http://bit.ly/29FIUWA"><asset:image class="img-responsive" src="venue/preview-msol.3007f7b9.png"/></a> <a target="_blank" href="http://bit.ly/29FIUWA">Law School Floor Plan</a>
+                <a href="${createLink(controller:"home", action: "hotel")}"><asset:image class="img-responsive" src="hotel-double-tree.jpg"/></a> <a href="${createLink(controller:"home", action: "hotel")}">DoubleTree Suites Hotel</a>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <a target="_blank" href="${assetPath(src: 'venue/schulze-hall-location.89247f39.png')}"><asset:image class="img-responsive" src="venue/preview-schulze-hall-street.3f647e65.png"/></a>
-                <a target="_blank" href="${assetPath(src: 'venue/schulze-hall-location.89247f39.png')}">Schulze Hall Street View</a><br/>
+                <a target="_blank" href="http://bit.ly/29pwCkn"><asset:image class="img-responsive" src="venue/preview-sh-floor-1.png"/></a> <a target="_blank" href="http://bit.ly/29pwCkn">Schulze Hall Floor Plan</a>
             </div>
-            <div class="col-sm-8">
-                <a target="_blank" href="http://bit.ly/29ZsgO5"><asset:image class="img-responsive" src="venue/preview-guest.50f773c4.png"/></a> <a target="_blank" href="http://bit.ly/29ZsgO5">Guest Network Access</a>
+            <div class="col-sm-4">
+                <a target="_blank" href="http://bit.ly/29FIUWA"><asset:image class="img-responsive" src="venue/preview-msol.png"/></a> <a target="_blank" href="http://bit.ly/29FIUWA">Law School Floor Plan</a>
+            </div>
+            <div class="col-sm-4">
+                <a target="_blank" href="http://bit.ly/29ZsgO5"><asset:image class="img-responsive" src="venue/preview-guest.png"/></a> <a target="_blank" href="http://bit.ly/29ZsgO5">Guest Network Access</a>
             </div>
         </div>
     </div>
-
+    <br/>
 </section>
 </body>
 </html>

@@ -23,7 +23,6 @@ Thumbs.db
 .asscache
 build/
 grails-app/assets/vendor/*
-.java-version
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
