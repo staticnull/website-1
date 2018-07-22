@@ -6,7 +6,7 @@ $(function () {
         defaultDate: moment.utc(gr8ConfStart),
         height: 'auto',
         minTime: "08:00:00",
-        maxTime: "22:00:00",
+        maxTime: "18:00:00",
         allDay: false,
         editable: false,
         selectable: false,
