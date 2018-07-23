@@ -8,10 +8,13 @@
 <br/>
 <section class="page-block">
     <div class="container">
+        <div class="row">
         <h1 id="calendarHeader" class="text-center"></h1>
         <div id="calendar"></div>
+        </div>
     </div>
 </section>
+
 <asset:javascript src="agenda.js"/>
 </body>
 </html>
