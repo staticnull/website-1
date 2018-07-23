@@ -1186,8 +1186,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .fc-time-grid-event .fc-time {
-	font-size: .7em;
-	font-weight: bold;
+	font-size: .85em;;
 	white-space: nowrap;
 }
 

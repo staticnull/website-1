@@ -9,8 +9,8 @@
 <section class="page-block">
     <div class="container">
         <div class="row">
-        <h1 id="calendarHeader" class="text-center"></h1>
-        <div id="calendar"></div>
+        <span id="calendarHeader" class="text-center text-info"></span>
+        <div id="calendar" style="padding-bottom: .5em"></div>
         </div>
     </div>
 </section>
