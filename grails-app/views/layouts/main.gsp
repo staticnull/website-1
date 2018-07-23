@@ -39,13 +39,13 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
+                        <a class="nav-link" href="${createLink(controller: "data", action: "agenda")}">Schedule</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="${createLink(controller: "data", action: "speakers")}">Speakers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="${createLink(controller: "data", action: "talks")}">Talks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="${createLink(controller: "data", action: "agenda")}">Schedule</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="${createLink(controller: "home", action: "venue")}">Venue</a>
