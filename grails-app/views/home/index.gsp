@@ -69,12 +69,12 @@
                 </div>
             </div>
         </div>
-        <div class="item slack-slide slide-bg">
+        <div class="item micronaut-slide slide-bg">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Join the conversation</h1>
-                    <p>Chat with GR8Conf attendees in the Groovy Community Slack</p>
-                    <p><a target="_blank" class="btn btn-raised" href="https://groovycommunity.com" role="button">Join Slack</a></p>
+                    <h1>Micronaut</h1>
+                    <p>A modern, JVM-based, full-stack framework for building modular, easily testable microservice applications.</p>
+                    <p><a target="_blank" class="btn btn-lg btn-raised" href="https://micronaut.io" role="button">micronaut.io</a></p>
                 </div>
             </div>
         </div>
@@ -84,6 +84,15 @@
                     <h1>Ratpack</h1>
                     <p>Lean & powerful HTTP apps</p>
                     <p><a target="_blank" class="btn btn-raised" href="https://ratpack.io" role="button">ratpack.io</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item slack-slide slide-bg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Join the conversation</h1>
+                    <p>Chat with GR8Conf attendees in the Groovy Community Slack</p>
+                    <p><a target="_blank" class="btn btn-raised" href="https://groovycommunity.com" role="button">Join Slack</a></p>
                 </div>
             </div>
         </div>

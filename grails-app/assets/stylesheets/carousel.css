@@ -52,6 +52,14 @@
     color: #ff3332;
     background-size: 80px 60px;
 }
+.micronaut-slide {
+    background-image: url('micronaut.svg');
+    background-color: lightgray;
+}
+.micronaut-slide > .container > .carousel-caption > p > a {
+    background-color: #7f7f7f;
+    color: black;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
