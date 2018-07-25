@@ -38,6 +38,14 @@
                     <p>We bring web and mobile technology to life using innovative and cost-effective solutions. We architect, develop and deliver software solutions for our customers using agile development best practices and coach teams on integrating continuous delivery into their projects.</p>
                 </div>
             </div>
+            <div class="col-md-6">
+                <a href="https://corporate.target.com/careers/career-areas/technology"> <asset:image class="img-responsive center-block" src="sponsors/target.jpg"/> </a>
+                <br/>
+                <div>
+                    <p>Target is building a domestic engineering team at our Headquarters in Minneapolis Minnesota. This is one of many strategic changes happening around us every day. Today is the day to be involved in something that will not only change
+                    our culture but also the face of retail. We need strong technical talent like you. Join us! %{-- -- <a href="https://codewithtarget.com">https://codewithtarget.com</a>--}%</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
