@@ -25,7 +25,7 @@
 
                     <p class="list-group-item-text">
                     <g:if test="${speaker?.twitter}">
-                        <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}">@${speaker.twitter}</a>
+                        <a class="fa fa-twitter" href="https://twitter.com/${speaker.twitter}">&nbsp;@${speaker.twitter}</a>
                     </g:if>
                     <p>${speaker.company}</p>
                     <p>${raw(speaker.bio)}</p>
