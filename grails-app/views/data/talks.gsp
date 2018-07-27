@@ -10,10 +10,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Talks</h1>
-                <g:if test="${talkCount != 1}">
-                <p class="lead">Learn from the best and brightest in our community.</p>
+                <g:if test="${talkCount == 1}">
+                    <h1>Talk</h1>
                 </g:if>
+                <g:else>
+                    <h1>Talks</h1>
+                    <p class="lead">Learn from the best and brightest in our community.</p>
+                </g:else>
             </div>
         </div>
         <div class="row">
@@ -25,7 +28,12 @@
                 <div class="col-md-6">
             </g:else>
                     <p>
-                        <a class="fa fa-2x" href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}">${talk.title}</a>
+                        <g:if test="${talkCount == 1}">
+                            <a class="fa fa-2x" href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}">${talk.title}</a>
+                        </g:if>
+                        <g:else>
+                            <a href="${createLink(controller: "data", action: "talks", params: [id: talk.id])}">${talk.title}</a>
+                        </g:else>
                         <div class="tags">
                         <g:each in="${talk.tags}" var="tag">
                             <span class="label label-info">${tag}</span>
