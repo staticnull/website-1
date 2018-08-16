@@ -14,10 +14,10 @@
             ensuring a safe environment for everybody.</p>
             <p><b><i>tl;dr: Don’t be a Jerk</i></b></p>
             <h2>Reporting violations</h2>
-            <p>We take our code of conduct seriously! Please report any potential violations to a conference organizer in person or send an email to <a target="_blank" href="mailto:shaun@prettygoodconferences.org">shaun@prettygoodconferences.org</a>. All complaints will
+            <p>We take our code of conduct seriously! Please report any potential violations to a conference organizer in person or send an email to <a target="_blank" href="mailto:contact@prettygoodconferences.org">contact@prettygoodconferences.org</a>. All complaints will
             be investigated immediately. If the person reporting the incident wishes, the organizers will provide updates how how the complaint is being dealt with.</p>
             <h2>Questions about the policy</h2>
-            <p>Please send all questions, comments and concerns to <a target="_blank" href="mailto:shaun@prettygoodconferences.org">shaun@prettygoodconferences.org</a>.</p>
+            <p>Please send all questions, comments and concerns to <a target="_blank" href="mailto:contact@prettygoodconferences.org">contact@prettygoodconferences.org</a>.</p>
             <h2>The Quick Version</h2>
             <p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference
             participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or
