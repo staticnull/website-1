@@ -43,7 +43,7 @@
                 <br/>
                 <div>
                     <p>Target is building a domestic engineering team at our Headquarters in Minneapolis Minnesota. This is one of many strategic changes happening around us every day. Today is the day to be involved in something that will not only change
-                    our culture but also the face of retail. We need strong technical talent like you. Join us! %{-- -- <a href="https://codewithtarget.com">https://codewithtarget.com</a>--}%</p>
+                    our culture but also the face of retail. We need strong technical talent like you. Join us! <a href="http://codewithtarget.com">https://codewithtarget.com</a></p>
                 </div>
             </div>
         </div>
