@@ -13,6 +13,7 @@
                 <p class="lead">Check out the great companies sponsoring GR8Conf US.</p>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-6">
                 <a target="_blank" href="https://objectcomputing.com"><asset:image class="img-responsive center-block" src="sponsors/oci.png"/></a>
@@ -30,6 +31,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-6">
                 <a target="_blank" href="http://agileorbit.com"><asset:image class="img-responsive center-block" src="sponsors/agileorbit.png"/></a>

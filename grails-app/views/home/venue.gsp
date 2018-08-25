@@ -13,6 +13,7 @@
                 <p class="lead">GR8Conf US is located at the University of St. Thomas</p>
             </div>
         </div>
+
         <div class="row">
             <mapclick class="">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.492801173064!2d-93.27761839999997!3d44.9742993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b332944c4be609%3A0xb98e7bf839108fa1!2sSchulze+Hall%2C+University+of+St.+Thomas+-+Minneapolis+Campus%2C+46+S+11th+St%2C+Minneapolis%2C+MN+55403!5e0!3m2!1sen!2sus!4v1419827873469"
@@ -21,6 +22,7 @@
             </mapclick>
         </div>
         <br/>
+
         <div class="row">
             <div class="col-sm-4">
                 <asset:image class="img-responsive" src="venue/schulze-hall.jpg"/>
@@ -35,6 +37,7 @@
                 <a href="${createLink(controller:"home", action: "hotel")}"><asset:image class="img-responsive" src="hotel-double-tree.jpg"/></a> <a href="${createLink(controller:"home", action: "hotel")}">DoubleTree Suites Hotel</a>
             </div>
         </div>
+
         <div class="row">
             <div class="col-sm-4">
                 <a target="_blank" href="http://bit.ly/29pwCkn"><asset:image class="img-responsive" src="venue/preview-sh-floor-1.png"/></a> <a target="_blank" href="http://bit.ly/29pwCkn">Schulze Hall Floor Plan</a>
