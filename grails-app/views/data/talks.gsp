@@ -19,6 +19,7 @@
                 </g:else>
             </div>
         </div>
+
         <div class="row">
         <g:each in="${talks}" var="talk">
             <g:if test="${talkCount == 1}">
