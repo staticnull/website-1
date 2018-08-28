@@ -20,10 +20,10 @@ $(function () {
             agendaDay: {
                 type: 'agenda',
                 duration: {days: 1},
-                groupByResource: true // grouping by rooms
+                groupByResource: true // Group by rooms
             }
         },
-        // Do not allow navigation beyond conf dates.
+        // Disable button when beyond conf dates.
         viewRender: function (view, element) {
             var startDate = moment.utc(gr8ConfStart);
             var endDate = moment.utc(gr8ConfEnd);
@@ -41,8 +41,7 @@ $(function () {
             cache: true
         },
         eventAfterAllRender: function () {
-            // Extend all track events across all resources.
-            // Hax
+            // Extend all track events across all resources. CSS hack.
             $(".allColumns")
                 .css('width', $("#calendar").width())
                 .css('background-color', "#7e7e7e")

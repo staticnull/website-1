@@ -8,7 +8,7 @@
 
 document.addEventListener("turbolinks:load", function() {
     $(function() {
-        // Convert to 12hour time for us Americans.
+        // Convert to 12 hour time format
         $(".slotTime").each(function() {
             var start = $(this).data("start");
             var end = $(this).data("end");
