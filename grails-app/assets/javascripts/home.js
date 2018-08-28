@@ -16,7 +16,7 @@ document.addEventListener("turbolinks:load", function() {
             countDownDiv.html("See you next year!");
         }
 
-        // Convert to 12hour time for us Americans.
+        // Convert to 12 hour format
         $(".slotTime").each(function() {
             var start = $(this).data("start");
             var end = $(this).data("end");
