@@ -28,7 +28,7 @@ class ApiService {
         if (id) {
             data = [data.find { it.id == id } ?: EMPTY_LIST]
         }
-        data
+        return data
     }
 
     @Cacheable(value = "talks")
@@ -37,7 +37,7 @@ class ApiService {
         if (id) {
             data = [data.find { it.id == id } ?: EMPTY_LIST]
         }
-        data
+        return data
     }
 
     @Cacheable(value = "agenda")
@@ -46,11 +46,11 @@ class ApiService {
         if (day) {
             data = [data.find { it.day == day } ?: EMPTY_LIST]
         }
-        data
+        return data
     }
 
     /**
-     * FullCalendar.js requires the data to be listed in events rather than by tracks as the gr8conf api provides.
+     * FullCalendar.js requires the data to be listed in events rather than by tracks as the GR8Conf api provides.
      * This maps the data to fullCalendar's format.
      * @return jsonMap compatible with fullCalendar.js
      */
@@ -96,7 +96,7 @@ class ApiService {
                 }
             }
         }
-        json
+        return json
     }
 
     @Cacheable(value = "tags")
@@ -110,7 +110,6 @@ class ApiService {
 
     private List getData(String type) {
         RestBuilder rest = new RestBuilder()
-
         def response = rest.get("${url}/${type}/${confId}") {
             accept 'application/json'
         }
